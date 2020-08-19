@@ -35,3 +35,24 @@ h1, h3 {
 	background-color: grey;
 	height: 39em;
 }
+
+#imageCentrale{
+	height: 550px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#flecheGauche{
+	WIDTH: 25;
+	HEIGHT:50;
+}
+
+#flecheDroite{
+	WIDTH: 25;
+	HEIGHT:50;
+}
+
+#boutonFerme{
+	margin: auto;
+}

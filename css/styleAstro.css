@@ -17,7 +17,9 @@ h1{
 }
 
 h2{
-	font-size: 25px;
+	/* font-size: 25px; */
+	margin-bottom: 0px;
+	margin-top: 0px;
 	color: grey;
 	text-decoration: underline;
 	text-weight: bold;
@@ -31,7 +33,7 @@ figure{
 
 
 header{
-	height: 100px;
+	height: 60px;
 }
 
 footer{
@@ -40,10 +42,10 @@ footer{
 
 
 .div1{
-	height:170px;
+	height:150px;
 	text-align: center;
 	background: #DDDDDD;
-	border-top: 5px solid #BBBBBB;
+	border-top: 2px solid #BBBBBB;
 
 }
 
@@ -208,15 +210,13 @@ p{
 
 }
 
-.titremenu8{
+.titremenu8:hover{
 	font-style: oblique;
 	font-weight: bold;
 	text-shadow: 7px 7px 3px grey;
 	padding-top: 15px;
 	border-top: 5px solid #FFDDFF;
 	background-color: RGBa(255, 210, 255, 0.2)
-
-
 }
 
 .titremenu9:hover{
@@ -226,6 +226,15 @@ p{
 	padding-top: 15px;
 	border-top: 5px solid #8888AA;
 	background-color: RGBa(88, 88, 110, 0.2)
+}
+
+.titremenu10:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #B735C4;
+	background-color: RGBa(183, 53, 196, 0.2)
 }
 
 
