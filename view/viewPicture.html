@@ -4,16 +4,77 @@
 		<title>AuriSite </title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/styleAstro.css">
 		<script type="text/javascript" src="../js/script.js"></script>
 	</head>
+	
 	<body class="indexPage">
-		<!-- <h1><a href="../index.html">Photos</h1> -->
-		<SCRIPT LANGUAGE = "JAVASCRIPT">
-			var parameters = location.search.substring(1).split("&");
-			affiche(parameters[0], parameters[1]);
-		</SCRIPT>
-		</div>
+		<header>
+			<a href="../index.html#Astro"><H1>L'astrophotographie</H1></a>
+		</header>
+		
+		<nav>	
+			<!--barre menu horizontale-->
+			<div class="div1" id="div1">
+				<SCRIPT LANGUAGE = "JAVASCRIPT">
+					var parameters = location.search.substring(1).split("&");
+					menuHorizontal(parameters[1]);
+				</SCRIPT>
+				<!-- <h2>Objets Photographiés</h2> -->
+				<!-- <section> -->
+				<!-- <ul>				 -->
+					<!-- <li class="titremenu1"> -->
+						<!-- <a href="viewPicture.html?Astro&soleil" target="">Soleil</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu2"> -->
+						<!-- <a href="../mercure/Mercure.html" target="">Mercure</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu3"> -->
+						<!-- <a href="viewPicture.html?Astro&venus" target="">Vénus</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu4"> -->
+						<!-- <a href="viewPicture.html?Astro&terre" target="">Terre</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu5"> -->
+						<!-- <a href="viewPicture.html?Astro&lune" target="">Lune</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu6"> -->
+						<!-- <a href="viewPicture.html?Astro&mars" target="">Mars</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu7"> -->
+						<!-- <a href="viewPicture.html?Astro&jupiter" target="">Jupiter</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu8"> -->
+						<!-- <a href="viewPicture.html?Astro&saturne" target="">Saturne</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu9"> -->
+						<!-- <a href="viewPicture.html?Astro&ciel_profond" target="">Objets lointains</a> -->
+					<!-- </li> -->
+					<!-- <li class="titremenu10"> -->
+						<!-- <a href="viewPicture.html?Astro&comete" target="">Comète</a> -->
+					<!-- </li> -->
+				<!-- </ul> -->
+				<!-- </section> -->
+			</div>
+			
+			<!--encart droit de presentation-->
+			<aside id="aside1">
+				<SCRIPT LANGUAGE = "JAVASCRIPT">
+					var parameters = location.search.substring(1).split("&");
+					afficheInfo(parameters[1]);
+				</SCRIPT>						
+			</aside>
+			
+			<!--partie avec photo miniature-->
+			<div id="div2">
+				<SCRIPT LANGUAGE = "JAVASCRIPT">
+					var parameters = location.search.substring(1).split("&");
+					afficheMiniature(parameters[0], parameters[1]);
+				</SCRIPT>
+			</div>
+		</nav>
 	</body>
+	
 	<footer>
 		<p>
 		<a href="../index.html"><img src="../images/Icon/Home_64.png" title="Revenir à la racine du site"></a></img>&emsp;

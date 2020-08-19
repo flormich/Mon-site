@@ -1,0 +1,239 @@
+/* Saturne */
+
+body{
+	font-family: 'Century Gothic', Calibri, serif;
+	text-align: center;
+	background-color: #000;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+h1{
+	color: blue;
+	border: 5px 5px 3px white;
+	text-decoration: underline;
+	font-size: 40px;
+}
+
+h2{
+	font-size: 25px;
+	color: grey;
+	text-decoration: underline;
+	text-weight: bold;
+
+}
+
+figure{
+	color: white;
+	font-size: 14px;
+}
+
+
+header{
+	height: 100px;
+}
+
+footer{
+	height: 50px;
+}
+
+
+.div1{
+	height:170px;
+	text-align: center;
+	background: #DDDDDD;
+	border-top: 5px solid #BBBBBB;
+
+}
+
+.div2{
+	height:100%;
+	width: 80%;
+}
+
+nav{
+	width: 100%;
+
+}
+
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 25px;
+	color: #545454;
+	font-size: 15px;
+}	
+
+section{
+	display: table;
+	margin: 0 auto;
+}
+
+ul{
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+	text-align: center;
+
+}
+
+td{
+	border: 0px solid white;
+}
+
+tr{
+}
+	
+figcaption{
+	color: white;
+}
+
+/* Partie menu de droite */
+aside{
+	background-color: RGBa(00, 55, 155, 0.3);
+	width: 20%;
+	font-size: 80%;
+	color: white;
+	border: 2px solid #AAAAFF;
+	float: right;
+	padding-bottom: 200px;
+	margin: 50px 50px 50px 10px;
+	border-radius: 80px;
+}
+
+aside ol{
+	text-align: left;
+	font-weight: bold;
+}
+
+
+
+section li{
+	list-style-type: none;
+	float: left;
+	padding-right: 15px;
+
+}
+
+
+
+p{
+	color: #00AAFF;
+}
+
+.pfooter{
+	color: grey;
+	border-bottom: 1px solid black;
+}
+
+
+
+.titremenu1:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #FFFFBB;
+	background-color: RGBa(255, 255, 100, 0.2)
+	
+
+}
+
+.titremenu2:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #CCBB44;
+	background-color: RGBa(190, 180, 44, 0.2)
+	
+
+}
+
+.titremenu3:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #FFBB77;
+	background-color: RGBa(255, 180, 77, 0.2)
+	
+
+}
+
+.titremenu4:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #BBBBFF;
+	background-color: RGBa(100, 100, 255, 0.2)
+	
+
+}
+
+.titremenu5:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #BBBBAA;
+	background-color: RGBa(100, 100, 90, 0.2)
+	
+
+}
+.titremenu6:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #FFAAAA;
+	background-color: RGBa(255, 100, 100, 0.2)
+	
+
+}
+
+.titremenu7:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #00E555;
+	background-color: RGBa(00, 235, 55, 0.2)
+
+
+}
+
+.titremenu8{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #FFDDFF;
+	background-color: RGBa(255, 210, 255, 0.2)
+
+
+}
+
+.titremenu9:hover{
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 7px 7px 3px grey;
+	padding-top: 15px;
+	border-top: 5px solid #8888AA;
+	background-color: RGBa(88, 88, 110, 0.2)
+}
+
+
+
+nav li:hover a{
+	padding: 15px 25px 20px 25px;
+}
+
+.titremenu8:hover a{
+	padding: 20px 25px 20px 25px;
+}

@@ -1,3 +1,47 @@
+function afficheMiniature(type, sujet){
+	//Fait un UpperCase
+	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
+	var finalImage = "";
+	// var finfin = "";
+	var j = 0;
+		for (i=1; i<=7; i++){
+			if (j == 4) {
+				finalImage = finalImage + '<p>';
+				j=0;
+				i--;
+			} else {
+			var image = ('<a href="../images/' + type + '/' + sujet + ' (' + i + ').jpg"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></a></img>&ensp;');
+			var newSujet = sujet.ucFirst();
+			var deb = ('<h1><a href="../index.html#' + type + '">' + newSujet + '</a></h1>')
+			finalImage = finalImage + image;
+			j++;
+			} 
+		}
+	var photoMiniature = deb + finalImage;
+	document.getElementById('div2').innerHTML += finalImage;	
+}
+
+function afficheInfo(sujet){
+	//Fait un UpperCase
+	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
+	var newSujet = sujet.ucFirst();
+	var contains = ('<h2>' + newSujet +'</h2><ol><li>Distance du soleil : </li><li>Dimètre apparent : exemple</li><li>Distance de la terre : </li><li>Tps que met la lumière à nous atteindre : </li><li>Tps des vidéos : 2 minutes</li><li>Tps de rotation : </li></ol>');
+	document.getElementById('aside1').innerHTML += contains;
+}
+
+function menuHorizontal(sujet){
+	console.log ("Hello world");
+	var contains = ('<h2>Objets Photographiés</h2><section><ul><li class="titremenu1"><a href="viewPicture.html?Astro&soleil" target="">Soleil</a></li><li class="titremenu2"><a href="viewPicture.html?Astro&mercure" target="">Mercure</a></li><li class="titremenu3"><a href="viewPicture.html?Astro&venus" target="">Vénus</a></li><li class="titremenu4"><a href="viewPicture.html?Astro&terre" target="">Terre</a></li><li class="titremenu5"><a href="viewPicture.html?Astro&lune" target="">Lune</a></li><li class="titremenu6"><a href="viewPicture.html?Astro&mars" target="">Mars</a></li><li class="titremenu7"><a href="viewPicture.html?Astro&jupiter" target="">Jupiter</a></li><li class="titremenu8"><a href="viewPicture.html?Astro&saturne" target="">Saturne</a></li><li class="titremenu9"><a href="viewPicture.html?Astro&ciel_profond" target="">Objets lointains</a></li><li class="titremenu10"><a href="viewPicture.html?Astro&comete" target="">Comète</a></li></ul></section>');
+	document.getElementById('div1').innerHTML += contains;
+}
+
+
+
+
+
+
+//Test de fonction
+
 function maFonction(){
 	var nouvVariable = prompt("Donne la variable : ", "");
 	if (nouvVariable) {
@@ -33,27 +77,6 @@ function maFonction2(){
 	
 }
 
-function affiche(type, sujet){
-	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
-	var finalImage = "";
-	// var finfin = "";
-	var j = 0;
-		for (i=1; i<=7; i++){
-			if (j == 6) {
-				finalImage = finalImage + '<p>';
-				j=0;
-				i--;
-			} else {
-			var image = ('<a href="../images/' + type + '/' + sujet + ' (' + i + ').jpg"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></a></img>&ensp&ensp;');
-			var newSujet = sujet.ucFirst();
-			var deb = ('<h1><a href="../index.html#' + type + '">' + newSujet + '</a></h1>')
-			finalImage = finalImage + image;
-			j++;
-			} 
-		}
-	document.body.innerHTML = deb + finalImage;	
-}
-
 function test(){
 	var nom = "MICHEL";
 	var prenom = "Florian";
@@ -85,13 +108,31 @@ function employee (name, jobtitle, born){
 	this.name=name;
 	this.jobtitle=jobtitle;
 	this.born=born;
-	return (this.name + "\n" + this.jobtitle + "\n");
+	// alert ("Votre nom est : " + this.name + "\n" + "Votre job est :" + this.jobtitle + "\n" + "Votre année de naissance est : " + this.born);	
+	var born = parseInt(this.born);
+	var aujourdhui = new Date();
+	var annee = aujourdhui.getUTCFullYear();
+	// alert (typeof born);
+	// alert (typeof annee);
+	var age = (annee - born);
+	document.write ("Résumé :" + "<br>" 
+		+ "Votre nom est : " + this.name + "<br>" 
+		+ "Votre job est :" + this.jobtitle + "<br>" 
+		+ "Votre année de naissance est : " + this.born + "<br>"
+		+ "Et tu as : " + age + " ans");	
 }
 
-function newEmployee(){
-	var fred=new employee("Fred","caverman",1970);
-	employee.prototype.salary=null;
-	fred.salary=2000;
-
-	alert (fred.name + "\n" + fred.salary + "\n" + fred.jobtitle);
+function newEmployee (){
+	var name = prompt ("Votre nom");
+	var jobtitle = prompt ("Votre métier : ");
+	var born = prompt ("Votre annee de naissance");
+	var employ = new employee(name, jobtitle, born);
 }
+
+
+// function newEmployee(){
+	// var fred=new employee("Fred","caverman",1970);
+	// employee.prototype.salary=null;
+	// fred.salary=2000;
+	// alert (fred.name + "\n" + fred.salary + "\n" + fred.jobtitle);
+// }
