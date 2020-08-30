@@ -44,13 +44,15 @@ h1, h3 {
 }
 
 #flecheGauche{
-	WIDTH: 25;
-	HEIGHT:50;
+	width: auto;
+	text-align: center;
+	text-decoration: underline;
 }
 
 #flecheDroite{
-	WIDTH: 25;
-	HEIGHT:50;
+	width: auto;
+	text-align: center;
+	text-decoration: underline;
 }
 
 #boutonFerme{
