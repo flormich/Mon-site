@@ -1,43 +1,25 @@
 var peuNbrImage = 20;
 var beaucoupNbrImage = 41;
 
-var detailAstro = {
-	sujet:["Soleil","Mercure","Venus","Terre","Lune","Mars","Jupiter","Saturne","Uranus","Neptune","Pluton","Lointain"], 
-	diametre:["","4 880","12 100","12 750","","6 785","143 000","120 000","52 000","48 600","2 400",""], 
-	nbSatelite:["","0","0","1","","2","30","40","16","8","1",""],
-	tpsRotation:["","59j","244j","24h","","24h 37min","9h 53min","10h 25min","17h 15min","18h 30min","6j 9h"],
-	tpsRevolution:["","88j","225j","365j","","687j","11ans 11mois","29ans 6mois","84ans","164ans","248ans"],
-	distanceDuSoleil:["0","57","108","149","","228","777","1 428","2 871","4 500","5 912",""],
-	distanceDeTerre:[""], 
-	diametreAppMaxi:["","13","58","","25","50","20","4","2.5","0.1",""], 
-	magnitudeMax:["","-2","-4.4","","-2.8","-3","-0.5","5.9","7.7","13.7",""],
-	tpsLumiereDeTerre:[""],
-	particularite:["","Rotation sens inverse","Contient de la vie","","Grande tache rouge","Anneaux","Coucher sur son orbite","","",""],
-
-	terre:["","12 750","1"] };
-
-	var jupiter = ["Toto", 31 ];
-	var x = [[ "a", "b", "c"] , [ 1,2,3]];
-	var y = ["Foo", 52];
+//Tableau
+var detailAstronomie = {
+	soleil:{distSol:"0",diam:"",rotation:"24h",revolution:"",sat:"",distTerre:"",diamAppMaxi:"32\'27\"",magnMax:"-26,73",tpsLumTerre:"8 minutes",particularite:"Dégage lumière et chaleur"},
+	mercure:{distSol:"57",diam:"4 879 km",rotation:"59 jours",revolution:"88 jours",sat:"0",distTerre:"",diamAppMaxi:"13\"",magnMax:"-2",tpsLumTerre:"",particularite:"Planéte grillée"},
+	venus:{distSol:"108",diam:"12 100 km",rotation:"244 jours",revolution:"225 jours",sat:"0",distTerre:"108 millions km",diamAppMaxi:"58\"",magnMax:"-4,4",tpsLumTerre:"",particularite:"Rotation en sens inverse"},
+	terre:{distSol:"149",diam:"12 750 km",rotation:"24h",revolution:"365 jours",sat:"1",distTerre:"",diamAppMaxi:"",magnMax:"",tpsLumTerre:"-",particularite:"Contiens de la vie"},
+	lune:{distSol:"",diam:"1 474 km",rotation:"29,5 jours",revolution:"29,5 jours",sat:"-",distTerre:"300 000 km",diamAppMaxi:"31\'36\"",magnMax:"-12",tpsLumTerre:"1 sec",particularite:"Sans atmosphere"},
+	mars:{distSol:"228",diam:"6 785 km",rotation:"24h 37min",revolution:"687 jours",sat:"2",distTerre:"",diamAppMaxi:"25\"",magnMax:"-2,8",tpsLumTerre:"4 minutes",particularite:"Plus de champs magnetique"},
+	jupiter:{distSol:"777",diam:"139 820 km",rotation:"9h 53min",revolution:"1ans 11mois",sat:"30",distTerre:"",diamAppMaxi:"50\"",magnMax:"-3",tpsLumTerre:"35 minutes",particularite:"Grande tâche rouge"},
+	saturne:{distSol:"1 428",diam:"1116 460 km",rotation:"10h 25min",revolution:"29ans 6mois",sat:"40",distTerre:"",diamAppMaxi:"20\"",magnMax:"-0,5",tpsLumTerre:"71 minutes",particularite:"Anneaux"},
+	uranus:{distSol:"2 871",diam:"50 725 km",rotation:"17h 15min",revolution:"84ans",sat:"16",distTerre:"",diamAppMaxi:"4\"",magnMax:"5,9",tpsLumTerre:"2 heures 40",particularite:"Couché sur son orbite"},
+	neptune:{distSol:"4 500",diam:"49 244 km",rotation:"18h 30min",revolution:"164ans",sat:"8",distTerre:"",diamAppMaxi:"2,5\"",magnMax:"7,7",tpsLumTerre:"4 heures",particularite:"Grande tâche bleu"},
+	pluton:{distSol:"5 912",diam:"2 375 km",rotation:"6 jours 9h",revolution:"248ans",sat:"1",distTerre:"",diamAppMaxi:"0,1\"",magnMax:"13,7",tpsLumTerre:"",particularite:""},
+};
 
 function afficheMiniature(type, sujet){
-	if (sujet == 'soleil'){
-		var chiffre = 0;
-	} if (sujet == 'mercure') {
-		var chiffre = 1;
-	} if (sujet == 'venus'){
-		var chiffre = 2;
-	}
-	//alert (chiffre);
-	// alert (sujet);
-	// alert (x[0][0]);
-	// alert (y[0]);
-	//alert (detailAstro.sujet[chiffre] + "\n" + detailAstro.diametre[chiffre]);
-
 	//Fait un UpperCase
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
 	var finalImage = "";
-	// var finfin = "";
 	if (sujet == "voie_lactee"){
 		var nbrImages = beaucoupNbrImage;
 	} else {
@@ -50,16 +32,7 @@ function afficheMiniature(type, sujet){
 				j=0;
 				i--;
 			} else {
-				//var image = ('<a href="../images/' + type + '/' + sujet + ' (' + i + ').jpg"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></a></img>');
-			
-			//var image = ('<img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></img>');
-			//var image = ('<a> <img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></a></img>');
-			//var image = ('<a href="diaporama.html?Astro&saturne (1).jpg" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></img></a>');
-			//var image = ('<a href="diaporama.html?Astro&saturne" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></img></a>');
-				// var image = ('<a href="diaporama.html?' + type + '&' + sujet  + '" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white"></img></a>');
-			  //var image = ('<a href="diaporama.html?' + type + '&' + sujet  + ' (' + i + ').jpg" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white"></img></a>');
 			var image = ('<a href="diaporama.html?' + type + '&' + sujet  + '&' + i + '" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white"></img></a>');
-			//var image = ('<a href="diaporama.html?' + type + '&' + sujet  + '" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white"></img></a>');
 			var newSujet = sujet.ucFirst();
 			var deb = ('<h1><a href="../index.html#' + type + '">' + newSujet + '</a></h1>')
 			finalImage = finalImage + image;
@@ -70,18 +43,18 @@ function afficheMiniature(type, sujet){
 }
 
 function afficheInfo(type, sujet){
-
-	var diam = detailAstro.terre[1];
-
+	if (sujet == "phenomene"){
+		var sujet = "terre";
+	}
 	//Fait un UpperCase
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
 	var newSujet = sujet.ucFirst();
 	if (type == "Astro"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li>Distance du soleil : </li><li>Diamètre apparent : ' + diam + '</li><li>Distance de la terre : </li><li>Tps que met la lumière à nous atteindre : </li><li>Tps des vidéos : 2 minutes</li><li>Tps de rotation : </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Distance du soleil : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distSol + '</li><br><li id="colorTitreTextInfo">Diamètre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diam + '</li><br><li id="colorTitreTextInfo">Tps de révolution : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].revolution + '</li><br><li id="colorTitreTextInfo">Tps de rotation : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].rotation + '</li><br><li id="colorTitreTextInfo">Nbr de satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].sat + '</li><br><br><li id="colorTitreTextInfo">Particularité : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].particularite + '</li><br></br><li id="colorTitreTextInfo">Distance de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distTerre + '</li><br><li id="colorTitreTextInfo">Diamètre apparent max : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diamAppMaxi + '</li><br><li id="colorTitreTextInfo">Magnitude maxi : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].magnMax + '</li><br><li id="colorTitreTextInfo">Dist. lum. de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].tpsLumTerre + '</li></ol>');
 	} if (type == "Paysage"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li>Lieu : </li><li>Date : </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li>Lieu : </li><br><li>Date : </li></ol>');
 	} if (type == "Portrait"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li>Lieux : </li><li>Date : </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li>Lieux : </li><br><li>Date : </li></ol>');
 	}
 	document.getElementById('aside1').innerHTML += contains;
 }
@@ -123,7 +96,8 @@ function imagePrecedente (type, sujet, images){
 	var contains = ('<IMG id="flecheGauche" SRC=" '+ ima + '" title="Previous" margin="auto" width="100%" name="prevPicture"><br><br>Precedente</A>');
 	document.getElementById('flecheGauche').innerHTML += contains;
 }
-//var image = ('<a href="diaporama.html?Astro&saturne" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white" ></img></a>');
+
+
 
 
 //Test de fonction
@@ -175,13 +149,16 @@ function test(){
 	console.log (obj);
 	console.log (tab[6] + " " + tab[5]);
 	console.log (obj.age);
+
+	var essai = "objet";
 	
-	alert ("Tu t'appel : " + tab[6] + " " + tab[5]);
-	alert ("Ton age est : " + obj.age + " ans");
-	alert ("L'index n°2 du tab est = " + tab[7][1]);
+	// alert ("Tu t'appel : " + tab[6] + " " + tab[5]);
+	// alert ("Ton age est : " + obj.age + " ans");
+	// alert ("L'index n°2 du tab est = " + tab[7][1]);
 	alert ("L'index n°2 de l'objet est = " + obj.tabs[1]);
+	alert ("L'essai est : " + obj[essai].prop);
 	
-	test2("Appel de la fonction test2");
+	// test2("Appel de la fonction test2");
 }
 
 function test2(parametre){
