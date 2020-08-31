@@ -3,6 +3,7 @@
     <HEAD>
         <META NAME="description" CONTENT="Un exemple de Javascript pour un diaporama">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleAstro.css">
         <script type="text/javascript" src="../js/script.js"></script>
     </HEAD>
     <BODY BGCOLOR="#000000">
@@ -10,7 +11,7 @@
         </FONT>
         <TABLE>
             <TR>
-                <TD>
+                <TD class="transition_box">
                         <A HREF="javascript:newSlide(-1)">
                             <div id="flecheGauche">
                             <SCRIPT LANGUAGE = "JAVASCRIPT">
@@ -20,7 +21,7 @@
                             </SCRIPT>
                         </div>
                 </TD>
-                <TD id="imageCentrale" width="100%">
+                <TD id="imageCentrale" class="fade-in" width="100%">
                     <div id="imageCentr">
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
                             var parameters = location.search.substring(1).split("&");
@@ -29,7 +30,7 @@
                         </SCRIPT>
                     </div>
                 </TD>
-                <TD>
+                <TD class="transition_box">
                     <A HREF="javascript:newSlide(1)">
                         <div id="flecheDroite">
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
