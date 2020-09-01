@@ -21,8 +21,8 @@
                             </SCRIPT>
                         </div>
                 </TD>
-                <TD id="imageCentrale" class="fade-in" width="100%">
-                    <div id="imageCentr">
+                <TD id="imageCentrale" width="100%">
+                    <div id="imageCentr" class="fade-in">
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
                             var parameters = location.search.substring(1).split("&");
                             var thisImg = parseInt(parameters[2], 10);
@@ -56,12 +56,13 @@
             </TR>
         </TABLE> -->
         <SCRIPT LANGUAGE = "JAVASCRIPT">
-            thisImg = 0
-            imgCt = 41
+            thisImg = 0            
+            
             var parameters = location.search.substring(1).split("&");
-            var thisImg = parseInt(parameters[2], 10);
+            var thisImg = parseInt(parameters[2], 10);          
            
-            function newSlide(direction) {               
+            function newSlide(direction) {  
+                imgCt = nbrImageSujet[parameters[1]][0] ;            
                 if (document.images) {
                     thisImg = thisImg + direction;
                     if (thisImg < 1) {
@@ -71,8 +72,18 @@
                         thisImg = 1;
                     }
                     document.slider.src = "../images/" + parameters[0] + "/" + parameters[1] +" (" + thisImg + ").jpg";
-                    document.nextPicture.src = "../images/Miniatures/" + parameters[0] + "/" + parameters[1] + " (" + (thisImg + 1) + ").jpg";
-                    document.prevPicture.src = "../images/Miniatures/" + parameters[0] + "/" + parameters[1] + " (" + (thisImg - 1) + ").jpg";
+
+                    if (thisImg == imgCt){
+                        document.nextPicture.src = "../images/Miniatures/" + parameters[0] + "/" + parameters[1] + " (1).jpg";
+                    } else {
+                        document.nextPicture.src = "../images/Miniatures/" + parameters[0] + "/" + parameters[1] + " (" + (thisImg + 1) + ").jpg";
+                    }
+
+                    if (thisImg == 1){
+                        document.prevPicture.src = "../images/Miniatures/" + parameters[0] + "/" + parameters[1] + " (" + (imgCt) + ").jpg";
+                    } else {
+                        document.prevPicture.src = "../images/Miniatures/" + parameters[0] + "/" + parameters[1] + " (" + (thisImg - 1) + ").jpg";
+                    }
                 }
             }
         </SCRIPT>

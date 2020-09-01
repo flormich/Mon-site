@@ -343,8 +343,8 @@ nav li:hover a{
 	        animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease-in;
 	        animation-timing-function: ease-in;
-	-webkit-animation-duration: 4s;
-	        animation-duration: 4s;
+	-webkit-animation-duration: 3.5s;
+	        animation-duration: 3.5s;
 }
 
 @-webkit-keyframes fadeInOpacity {
@@ -371,10 +371,10 @@ nav li:hover a{
 	margin:0 auto;
 	/* background-color:beige; */
 	/* height:200px; */
-	opacity:0.3;
+	opacity:0.4;
 	/* text-align:center;  */
-	 transition:opacity 1s;
-	  -webkit-transition: opacity 1s;  
+	 transition:opacity 1.5s;
+	  -webkit-transition: opacity 1.5s;  
   }
   .transition_box:hover{
   opacity:1;
