@@ -145,6 +145,29 @@ figcaption{
 	font-weight: bold;
 }
 
+#asideDiaporama{
+	background-color: RGBa(00, 00, 00, 1);
+	width: 100%;
+	font-size: 80%;
+	color: white;
+	border: 2px solid #AAAAFF;
+
+	/* float: right; */
+	/* position: relative; */
+	padding-top: 5px;
+	padding-bottom: 1px;
+	margin: auto;
+	/* margin: 31.5rem 0px 0px 75%; */
+	margin-top: 1.5rem;
+	border-radius: 30px;
+	height: 110px;
+}
+
+#asideDiaporama ol{
+	text-align: left;
+	font-weight: bold;
+}
+
 ol {
 	padding-left: 25px;
 }
@@ -163,10 +186,6 @@ p{
 	color: #00AAFF;
 }
 
-.pfooter{
-	color: grey;
-	border-bottom: 1px solid black;
-}
 
 
 /* Menu horizontale */
@@ -326,24 +345,24 @@ nav li:hover a{
 
 
 .fade-in {
-	-webkit-animation-name: fadeInOpacity;
+	/* -webkit-animation-name: fadeInOpacity; */
 	        animation-name: fadeInOpacity;
-	-webkit-animation-iteration-count: 1;
+	/* -webkit-animation-iteration-count: 1; */
 	        animation-iteration-count: 1;
-	-webkit-animation-timing-function: ease-in;
+	/* -webkit-animation-timing-function: ease-in; */
 	        animation-timing-function: ease-in;
-	-webkit-animation-duration: 1s;
+	/* -webkit-animation-duration: 1s; */
 	        animation-duration: 1s;
 }
 
 .fade-in2 {
-	-webkit-animation-name: fadeInOpacity;
+	/* -webkit-animation-name: fadeInOpacity; */
 	        animation-name: fadeInOpacity;
-	-webkit-animation-iteration-count: 1;
+	/* -webkit-animation-iteration-count: 1; */
 	        animation-iteration-count: 1;
-	-webkit-animation-timing-function: ease-in;
+	/* -webkit-animation-timing-function: ease-in; */
 	        animation-timing-function: ease-in;
-	-webkit-animation-duration: 3.5s;
+	/* -webkit-animation-duration: 3.5s; */
 	        animation-duration: 3.5s;
 }
 
@@ -374,8 +393,12 @@ nav li:hover a{
 	opacity:0.4;
 	/* text-align:center;  */
 	 transition:opacity 1.5s;
-	  -webkit-transition: opacity 1.5s;  
-  }
-  .transition_box:hover{
+	  /* -webkit-transition: opacity 1.5s;   */
+}
+.transition_box:hover{
   opacity:1;
-  }
+}
+
+#titreDiap{
+	color: whitesmoke;
+}

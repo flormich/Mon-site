@@ -16,7 +16,7 @@
 			<!--barre menu horizontale-->
 			<div class="div1" id="div1">
 				<SCRIPT LANGUAGE = "JAVASCRIPT">
-					var parameters = location.search.substring(1).split("&");
+					let parameters = location.search.substring(1).split("&");
 					menuHorizontal(parameters[0], parameters[1]);
 				</SCRIPT>
 			</div>
@@ -27,7 +27,7 @@
 				<!--partie avec photo miniature-->
 				<section id="div2" class="fade-in">
 					<SCRIPT LANGUAGE = "JAVASCRIPT">
-						var parameters = location.search.substring(1).split("&");
+						let parameters = location.search.substring(1).split("&");
 						afficheMiniature(parameters[0], parameters[1]);
 					</SCRIPT>
 				</section>
@@ -35,7 +35,7 @@
 				<section id="aside1" class="fade-in2" width="25%">
 					<div>
 						<SCRIPT LANGUAGE = "JAVASCRIPT">
-							var parameters = location.search.substring(1).split("&");
+							let parameters = location.search.substring(1).split("&");
 							afficheInfo(parameters[0], parameters[1]);
 						</SCRIPT>						
 					</div>
@@ -43,21 +43,10 @@
 						<br><br>
 						<a href="../index.html"><img id="home" src="../images/Icon/Home_64.png" width="50%" text-align="center" title="Revenir à la racine du site"><br>Accueil</a></img>&emsp;
 					</div>
-				</section>
+				</section>	
 			</div>
-		</nav>
-		
-	</body>
-	
-	<footer>
-		<p>
-		<!--<div id="diap">
-		<a href="../index.html"><img src="../images/Icon/Home_64.png" title="Revenir à la racine du site"></a></img>&emsp;
-			<script language = "JAVASCRIPT">
-				var parameters = location.search.substring(1).split("&");
-				diaporama(parameters[0], parameters[1]);
-			</script>
-		</div>-->
-		<!-- <a href="diaporama.html" target="_blank"><img src="../images/Icon/diaporama2.jpg" title="Lire le diaporama"></a></img>&emsp; -->
-	</footer>
+		</nav>		
+	</body>	
+
+
 </html>

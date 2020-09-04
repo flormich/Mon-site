@@ -5,12 +5,16 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/server.js"></script>
+
 		<style
 			background-color: black;></style>
 	</head>
+
 	<balise id="index"></balise>
+
 	<body class="indexPage">
-		<h1>Site photographique</h1>
+		<h1>Photographie</h1>
 		<h3>
 			<a href="#Portrait"> Portrait / </a>
 			<a href="#Paysage"> Paysage / </a>
@@ -40,7 +44,7 @@
 		<nav class="nav3">
 			<balise id="Animaux"></balise>
 			<br>
-			<h2><a href="#index">Photo d'animaux</a></h2>
+			<h2><a href="#index">Photos d'animaux</a></h2>
 			<br>
 			<a href="view/viewPicture.html?Animaux&bouquetin"><img src="images/Presentation/animaux3.jpg" title="Animaux" height="75%" width="75%"></a></img>&emsp;	
 			<p>
@@ -50,7 +54,7 @@
 		<nav class="nav2">
 			<balise id="Astro"></balise>
 			<br>
-			<h2><a href="#index">Photo d'astronomie</a></h2>
+			<h2><a href="#index">Photos d'astronomie</a></h2>
 			<br>
 			<!-- <a href="view/viewPicture.html?Astro&astro"><img src="images/Miniatures/Astro/astro (1).jpg" title="Astro"></a></img>&emsp;	 -->
 			<a href="view/viewPicture.html?Astro&soleil"><img src="images/Presentation/icoAstro.jpg" title="Astro" height="75%" width="75%"></a></img>&emsp;	
@@ -72,12 +76,15 @@
 			<a href="javascript:void(0)" onclick=newEmployee()><img src="images/Miniatures/Portrait/mathilde (3).jpg" >NewEmploye</a></img>&emsp;				
 			<a href="javascript:void(0)" onclick=employee()><img src="images/Miniatures/Portrait/anais (2).jpg" ></a></img>&emsp;				
 			<a href ="javascript:test()">Cliquez ici</a>
+			<br>
+			<a href ="javascript:affiche()">Cliquez</a>
 			<p>
 			<a href="#index">En haut</a>
 		</nav>
 	</body>
+
 	<footer>
-		<p>
-		</p>
+		<p class="pfooter">Site développé par Florian Aurigoth</p>
+		<br>
 	</footer>
 </html>
