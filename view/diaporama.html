@@ -10,48 +10,59 @@
     <BODY BGCOLOR="#000000">
         <FONT SIZE="+1" FACE="Helvetica, Arial, sans serif">
         </FONT>
-        <TABLE>
+        <TABLE id="diaporamaCss">
             <TR>
-                <TD class="transition_box">
-                        <A HREF="javascript:newSlide(-1)">
-                            <div id="flecheGauche">
-                            <SCRIPT LANGUAGE = "JAVASCRIPT">
-                                let parameters = location.search.substring(1).split("&");
-                                let thisImg = parseInt(parameters[2], 10);
-                                imagePrecedente(parameters[0], parameters[1], thisImg);
-                            </SCRIPT>
-                        </div>
-                </TD>
-                <TD id="imageCentrale" width="100%">
-                    <div id="imageCentr" class="fade-in">
+                <TD id="MenuGauche">
+                    <div id="titreDiap">
+                            <script language = "JAVASCRIPT"  >
+                                var parameters = location.search.substring(1).split("&");
+                                var thisImg = parseInt(parameters[2], 10);
+                                titrePhotoPano(parameters[0], parameters[1], thisImg);
+                            </script>
+                    </div>
+                    
+                    <div> 
+                        <A HREF="javascript:newSlide(-1)" id="flecheGauche" class="transition_box">
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            let parameters = location.search.substring(1).split("&");
-                            let thisImg = parseInt(parameters[2], 10);                            
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
+                            imagePrecedente(parameters[0], parameters[1], thisImg);
+                        </SCRIPT>
+                        </A>
+                    </div>
+                </TD>
+                <TD id="imageCentrale">
+                    <div id="imageCentr" class="fade-in"></div>
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);                            
                             accueilDiap(parameters[0], parameters[1], thisImg);
                         </SCRIPT>
                     </div>
-                    <div id="asideDiaporama" class="fade-in" width="25%">                    
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            let parameters = location.search.substring(1).split("&");
-                            afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
-                        </SCRIPT>						
-                    </div>
                 </TD>
-                <TD class="transition_box">
-                    <A HREF="javascript:newSlide(1)">
-                        <div id="flecheDroite">
+                <TD id="MenuDroit" >
+                    <div>
+                        <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" >
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            let parameters = location.search.substring(1).split("&");
-                            let thisImg = parseInt(parameters[2], 10);
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
                             imageSuivante(parameters[0], parameters[1], thisImg);
                         </SCRIPT>
+                        </A>
+                    </div>
+                    
+                    <div id="asideDiaporama" class="fade-in">                    
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
+                        </SCRIPT>						
                     </div>
                 </TD>
             </TR>        
             <!-- <section id="asideDiaporama" class="fade-in" width="25%">                
                 <div>                    
                     <SCRIPT LANGUAGE = "JAVASCRIPT">
-                        let parameters = location.search.substring(1).split("&");
+                        var parameters = location.search.substring(1).split("&");
                         afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
                     </SCRIPT>						
                 </div>
@@ -60,12 +71,12 @@
 
         <!-- <SCRIPT LANGUAGE = "JAVASCRIPT">        
             thisImg = 0   
-            let parameters = location.search.substring(1).split("&");
-            let thisImg = parseInt(parameters[2], 10); 
+            var parameters = location.search.substring(1).split("&");
+            var thisImg = parseInt(parameters[2], 10); 
             newSlide(direction);            
         </SCRIPT> -->
     </BODY>
-    <br>
+    <br><br>
     <footer>
         <hr>
         <p class="pfooter">Site développé par Florian Aurigoth</p>

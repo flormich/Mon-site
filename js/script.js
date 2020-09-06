@@ -1,6 +1,6 @@
 //Tableau
-require("/mymodule.js");
-let detailAstronomie = {
+// require("/mymodule.js");
+var detailAstronomie = {
 	soleil:{distSol:"0",diam:"1,39 millions km",rotation:"28 jours",revolution:"-",sat:"-",distTerre:"149 millions km",diamAppMaxi:"32\'27\"",magnMax:"-26,73",tpsLumTerre:"8 minutes",particularite:"Dégage lumière et chaleur", nomSat:"-"},
 	mercure:{distSol:"57 millions km",diam:"4 879 km",rotation:"59 jours",revolution:"88 jours",sat:"0",distTerre:"92 millions km",diamAppMaxi:"13\"",magnMax:"-2",tpsLumTerre:"5 minutes 6 sec",particularite:"Planète grillée", nomSat:""},
 	venus:{distSol:"108 millions km",diam:"12 100 km",rotation:"244 jours",revolution:"225 jours",sat:"0",distTerre:"41 millions km",diamAppMaxi:"58\"",magnMax:"-4,4",tpsLumTerre:"2 minutes 16 sec",particularite:"Rotation en sens inverse", nomSat:""},
@@ -17,7 +17,7 @@ let detailAstronomie = {
 	ciel_profond:{distSol:"Aucune info",diam:"Aucune info",rotation:"Aucune info",revolution:"Aucune info",sat:"Aucune info",distTerre:"Aucune info",diamAppMaxi:"Aucune info",magnMax:"Aucune info",tpsLumTerre:"Aucune info",particularite:"Aucune info", nomSat:""},
 	comete:{distSol:"Aucune info",diam:"Aucune info",rotation:"Aucune info",revolution:"Aucune info",sat:"Aucune info",distTerre:"Aucune info",diamAppMaxi:"Aucune info",magnMax:"Aucune info",tpsLumTerre:"Aucune info",particularite:"Aucune info", nomSat:""}
 };
-let detailPortrait = {
+var detailPortrait = {
 	anais:{distSol:"0",diam:"1,39 millions km",rotation:"28 jours",revolution:"-",sat:"",distTerre:"",diamAppMaxi:"32\'27\"",magnMax:"-26,73",tpsLumTerre:"8 minutes",particularite:"Dégage lumière et chaleur"},
 	anais2:{distSol:"57",diam:"4 879 km",rotation:"59 jours",revolution:"88 jours",sat:"0",distTerre:"",diamAppMaxi:"13\"",magnMax:"-2",tpsLumTerre:"",particularite:"Planéte grillée"},
 	angelique:{distSol:"108",diam:"12 100 km",rotation:"244 jours",revolution:"225 jours",sat:"0",distTerre:"108 millions km",diamAppMaxi:"58\"",magnMax:"-4,4",tpsLumTerre:"",particularite:"Rotation en sens inverse"},
@@ -27,14 +27,14 @@ let detailPortrait = {
 	marion:{distSol:"777",diam:"139 820 km",rotation:"9h 53min",revolution:"1ans 11mois",sat:"30",distTerre:"",diamAppMaxi:"50\"",magnMax:"-3",tpsLumTerre:"35 minutes",particularite:"Grande tâche rouge"},
 	yulia:{distSol:"1 428",diam:"1116 460 km",rotation:"10h 25min",revolution:"29ans 6mois",sat:"40",distTerre:"",diamAppMaxi:"20\"",magnMax:"-0,5",tpsLumTerre:"71 minutes",particularite:"Anneaux"},
 };
-let detailPaysage = {
+var detailPaysage = {
 	canada:{Capitale:"Ottawa",Superficie:"9,98 millions km²",Population:"37,6 millions",nbrReg:"10"},
 	france:{Capitale:"Paris",Superficie:"643 801 km²",Population:"67 millions",nbrReg:"13"},
 	italie:{Capitale:"Rome",Superficie:"301 338 km²",Population:"60,36 millions",nbrReg:"20"},
 	japon:{Capitale:"Tokyo",Superficie:"377 915 km²",Population:"126,5 millions",nbrReg:"8"},
 	martinique:{Capitale:"Paris / Fort-de-france",Superficie:"1 128 km²",Population:"376 480",nbrReg:"1"},
 };
-let nbrImageSujet = {
+var nbrImageSujet = {
     anais:[15],
     anais2:[6],
     angelique:[0],
@@ -70,7 +70,7 @@ let nbrImageSujet = {
     comete:[2],	
 };
 
-let detailInfoPanorama = {
+var detailInfoPanorama = {
 	soleil:{1:{titre:"Tâche solaire", lieu:"Bourg-en-bresse", date:"20/05/2000", heure:"17h00", objectif:"Celestron 203 + oculaire 26mm", materielPhoto:"Canon 500N", typePhoto:"Argentique", sensibilite:"200 iso", focale:"2 000mm", tpsPose:"1/1000sec", NbrPhoto:"1"},
 			2:{titre:"Eclipse totale", lieu:"St Avold", date:"11/08/1999", heure:"12h00", objectif:"Teleobjectif 150 mm + doubleur", materielPhoto:"Canon 500N", typePhoto:"Argentique", sensibilite:"200 iso", focale:"f11", tpsPose:"1/1000 sec", NbrPhoto:"1"},
 			3:{titre:"Eclipse totale", lieu:"St Avold", date:"11/08/1999", heure:"12h15", objectif:"Teleobjectif 300 mm + doubleur", materielPhoto:"Canon 500N", typePhoto:"Argentique", sensibilite:"200 iso", focale:"f11", tpsPose:"1/1000 sec", NbrPhoto:"1"},
@@ -212,13 +212,13 @@ let detailInfoPanorama = {
 
 function menuHorizontal(type, sujet){
 	if (type == "Astro"){		
-		let contains = ('<a href="../index.html" id="titre"><h2>Astrophotographie</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Astro&soleil" target="">Soleil</a></li><li class="titremenu2"><a href="viewPicture.html?Astro&mercure" target="">Mercure</a></li><li class="titremenu3"><a href="viewPicture.html?Astro&venus" target="">Vénus</a></li><li class="titremenu4"><a href="viewPicture.html?Astro&phenomene" target="">Phénomènes<br> Terrestre</a></li><li class="titremenu5"><a href="viewPicture.html?Astro&lune" target="">Lune</a></li><li class="titremenu6"><a href="viewPicture.html?Astro&mars" target="">Mars</a></li><li class="titremenu7"><a href="viewPicture.html?Astro&jupiter" target="">Jupiter</a></li><li class="titremenu8"><a href="viewPicture.html?Astro&saturne" target="">Saturne</a></li><li class="titremenu9"><a href="viewPicture.html?Astro&voie_lactee" target="">Voie lactée</a></li><li class="titremenu10"><a href="viewPicture.html?Astro&circumPolaire" target="">Circumpolaire</a></li><li class="titremenu11"><a href="viewPicture.html?Astro&ciel_profond" target="">Objets lointains</a></li><li class="titremenu12"><a href="viewPicture.html?Astro&comete" target="">Comète</a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Astrophotographie</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Astro&soleil" target="">Soleil</a></li><li class="titremenu2"><a href="viewPicture.html?Astro&mercure" target="">Mercure</a></li><li class="titremenu3"><a href="viewPicture.html?Astro&venus" target="">Vénus</a></li><li class="titremenu4"><a href="viewPicture.html?Astro&phenomene" target="">Phénomènes<br> Terrestre</a></li><li class="titremenu5"><a href="viewPicture.html?Astro&lune" target="">Lune</a></li><li class="titremenu6"><a href="viewPicture.html?Astro&mars" target="">Mars</a></li><li class="titremenu7"><a href="viewPicture.html?Astro&jupiter" target="">Jupiter</a></li><li class="titremenu8"><a href="viewPicture.html?Astro&saturne" target="">Saturne</a></li><li class="titremenu9"><a href="viewPicture.html?Astro&voie_lactee" target="">Voie lactée</a></li><li class="titremenu10"><a href="viewPicture.html?Astro&circumPolaire" target="">Circumpolaire</a></li><li class="titremenu11"><a href="viewPicture.html?Astro&ciel_profond" target="">Objets lointains</a></li><li class="titremenu12"><a href="viewPicture.html?Astro&comete" target="">Comète</a></li></ul></section>');
 	} if (type == "Paysage"){
-		let contains = ('<a href="../index.html" id="titre"><h2>Paysages</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Paysage&canada" target="">Canada</a></li><li class="titremenu2"><a href="viewPicture.html?Paysage&france" target="">France</a></li><li class="titremenu3"><a href="viewPicture.html?Paysage&italie" target="">Italie</a></li><li class="titremenu4"><a href="viewPicture.html?Paysage&japon" target="">Japon</a></li><li class="titremenu5"><a href="viewPicture.html?Paysage&martinique" target="">Martinique</a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Paysages</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Paysage&canada" target="">Canada</a></li><li class="titremenu2"><a href="viewPicture.html?Paysage&france" target="">France</a></li><li class="titremenu3"><a href="viewPicture.html?Paysage&italie" target="">Italie</a></li><li class="titremenu4"><a href="viewPicture.html?Paysage&japon" target="">Japon</a></li><li class="titremenu5"><a href="viewPicture.html?Paysage&martinique" target="">Martinique</a></li></ul></section>');
 	} if (type == "Portrait"){
-		let contains = ('<a href="../index.html" id="titre"><h2>Portrait</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Portrait&anais" target="">Anaïs</a></li><li class="titremenu2"><a href="viewPicture.html?Portrait&anais2 " target="">Anais2 </a></li><li class="titremenu3"><a href="viewPicture.html?Portrait&angelique " target="">Angelique </a></li><li class="titremenu4"><a href="viewPicture.html?Portrait&johan" target="">Johan</a></li><li class="titremenu5"><a href="viewPicture.html?Portrait&karine " target="">Karine </a></li><li class="titremenu6"><a href="viewPicture.html?Portrait&mathilde" target="">Mathilde</a></li><li class="titremenu7"><a href="viewPicture.html?Portrait&marion " target="">Marion </a></li><li class="titremenu8"><a href="viewPicture.html?Portrait&yulia " target="">Yulia </a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Portrait</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Portrait&anais" target="">Anaïs</a></li><li class="titremenu2"><a href="viewPicture.html?Portrait&anais2 " target="">Anais2 </a></li><li class="titremenu3"><a href="viewPicture.html?Portrait&angelique " target="">Angelique </a></li><li class="titremenu4"><a href="viewPicture.html?Portrait&johan" target="">Johan</a></li><li class="titremenu5"><a href="viewPicture.html?Portrait&karine " target="">Karine </a></li><li class="titremenu6"><a href="viewPicture.html?Portrait&mathilde" target="">Mathilde</a></li><li class="titremenu7"><a href="viewPicture.html?Portrait&marion " target="">Marion </a></li><li class="titremenu8"><a href="viewPicture.html?Portrait&yulia " target="">Yulia </a></li></ul></section>');
 	} if (type == "Animaux"){
-		let contains = ('<a href="../index.html" id="titre"><h2>Animaux</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Animaux&bouquetin" target="">Bouquetin</a></li><li class="titremenu2"><a href="viewPicture.html?Animaux&ecureuil" target="">Ecureuil</a></li><li class="titremenu3"><a href="viewPicture.html?Animaux&marmotte" target="">Marmotte</a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Animaux</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Animaux&bouquetin" target="">Bouquetin</a></li><li class="titremenu2"><a href="viewPicture.html?Animaux&ecureuil" target="">Ecureuil</a></li><li class="titremenu3"><a href="viewPicture.html?Animaux&marmotte" target="">Marmotte</a></li></ul></section>');
 	}
 	document.getElementById('div1').innerHTML += contains;
 }
@@ -226,21 +226,21 @@ function menuHorizontal(type, sujet){
 function afficheMiniature(type, sujet){
 	//Fait un UpperCase
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
-	let finalImage = "";
+	var finalImage = "";
 
 	if (nbrImageSujet[sujet][0] == 0) {
 		finalImage = finalImage + '<p>';
 		document.getElementById('div2').innerHTML += finalImage + "<br><br><br><br><br><br><br>Aucune images";
 	} else {
-		let j = 0;
+		var j = 0;
 		for (i=1; i<=nbrImageSujet[sujet][0]; i++){
 			if (j == 5) {
 				finalImage = finalImage + '<p>';
 				j=0;
 				i--;
 			} else {
-				let image = ('<a href="diaporama.html?' + type + '&' + sujet  + '&' + i + '" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white"></img></a>');
-				let newSujet = sujet.ucFirst();
+				var image = ('<a href="diaporama.html?' + type + '&' + sujet  + '&' + i + '" target="_blank"><img src="../images/Miniatures/' + type + '/' + sujet + ' (' + i + ').jpg" border="2px solid white"></img></a>');
+				var newSujet = sujet.ucFirst();
 			finalImage = finalImage + image;
 			j++;
 			} 
@@ -251,32 +251,32 @@ function afficheMiniature(type, sujet){
 
 function afficheInfo(type, sujet){
 	if (sujet == "phenomene"){
-		let sujet = "terre";
+		var sujet = "terre";
 	}
 	//Fait un UpperCase
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
-	let newSujet = sujet.ucFirst();
+	var newSujet = sujet.ucFirst();
 	if (type == "Astro"){
-		let contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Distance du soleil : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distSol + '</li><br><li id="colorTitreTextInfo">Diamètre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diam + '</li><br><li id="colorTitreTextInfo">Tps de révolution : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].revolution + '</li><br><li id="colorTitreTextInfo">Tps de rotation : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].rotation + '</li><br><li id="colorTitreTextInfo">Nbr de satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].sat + '</li><br><li id="colorTitreTextInfo">Nom satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].nomSat + '</li><br><br><li id="colorTitreTextInfo">Particularité : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].particularite + '</li><br></br><li id="colorTitreTextInfo">Distance de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distTerre + '</li><br><li id="colorTitreTextInfo">Diamètre apparent max : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diamAppMaxi + '</li><br><li id="colorTitreTextInfo">Magnitude maxi : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].magnMax + '</li><br><li id="colorTitreTextInfo">Dist. lum. de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].tpsLumTerre + '</li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Distance du soleil : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distSol + '</li><br><li id="colorTitreTextInfo">Diamètre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diam + '</li><br><li id="colorTitreTextInfo">Tps de révolution : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].revolution + '</li><br><li id="colorTitreTextInfo">Tps de rotation : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].rotation + '</li><br><li id="colorTitreTextInfo">Nbr de satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].sat + '</li><br><li id="colorTitreTextInfo">Nom satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].nomSat + '</li><br><br><li id="colorTitreTextInfo">Particularité : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].particularite + '</li><br></br><li id="colorTitreTextInfo">Distance de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distTerre + '</li><br><li id="colorTitreTextInfo">Diamètre apparent max : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diamAppMaxi + '</li><br><li id="colorTitreTextInfo">Magnitude maxi : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].magnMax + '</li><br><li id="colorTitreTextInfo">Dist. lum. de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].tpsLumTerre + '</li></ol>');
 	} if (type == "Paysage"){
-		let contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Capitale : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Capitale + '</li><br><li id="colorTitreTextInfo">Superficie : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Superficie + '</li><br><li id="colorTitreTextInfo">Population : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Population + '</li><br><li id="colorTitreTextInfo">Nombre de région : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].nbrReg + '</li><br></ol> <br><img id="home" src="../images/Miniatures/' + type + '/' + sujet + ' (0).jpg" width="30%" text-align="center" title="Carte"><br></a></img>&emsp;');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Capitale : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Capitale + '</li><br><li id="colorTitreTextInfo">Superficie : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Superficie + '</li><br><li id="colorTitreTextInfo">Population : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Population + '</li><br><li id="colorTitreTextInfo">Nombre de région : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].nbrReg + '</li><br></ol> <br><img id="home" src="../images/Miniatures/' + type + '/' + sujet + ' (0).jpg" width="30%" text-align="center" title="Carte"><br></a></img>&emsp;');
 	} if (type == "Portrait"){
-		let contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Lieux :&nbsp  </li><br><li>Date : </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Lieux :&nbsp  </li><br><li>Date : </li></ol>');
 	} if (type == "Animaux"){
-		let contains = ('<h2>' + newSujet)
+		var contains = ('<h2>' + newSujet)
 	}
 	document.getElementById('aside1').innerHTML += contains;
 }
 
 function afficheInfoDiaporama(type, sujet, number){
 	if (sujet == "phenomene"){
-		let sujet = "terre";
+		var sujet = "terre";
 	}
 	//Fait un UpperCase
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
-	let newSujet = sujet.ucFirst();
+	var newSujet = sujet.ucFirst();
 	if (type == "Astro"){
-		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Lieu : " + detailInfoPanorama[sujet][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[sujet][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[sujet][thisImg].heure + "</li><br><li>" + "Objectif : " + detailInfoPanorama[sujet][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[sujet][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[sujet][thisImg].typePhoto + "</li><br><li>" + "Sensibilite : " + detailInfoPanorama[sujet][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[sujet][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[sujet][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[sujet][thisImg].NbrPhoto + "<bt></li></ul>" ;
+		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Objectif : " + detailInfoPanorama[sujet][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[sujet][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[sujet][thisImg].typePhoto + "<br><br>" + "Sensibilite : " + detailInfoPanorama[sujet][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[sujet][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[sujet][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[sujet][thisImg].NbrPhoto + "<bt></li></ul>" ;
 	} else {
 		document.getElementById('asideDiaporama').innerHTML = "<ul><li>Aucune information</li></ul>";
 	}
@@ -286,46 +286,62 @@ function afficheInfoDiaporama(type, sujet, number){
 
 
 // function diaporama(type, sujet){
-// 	let contains = ('<a href="diaporama.html?' + type + '&' + sujet +'" target="_blank"><img src="../images/Icon/diaporama.jpg" title="Lire le diaporama"><br>Diaporama</a></img>&emsp;');
+// 	var contains = ('<a href="diaporama.html?' + type + '&' + sujet +'" target="_blank"><img src="../images/Icon/diaporama.jpg" title="Lire le diaporama"><br>Diaporama</a></img>&emsp;');
 // 	document.getElementById('diap').innerHTML += contains;
 // }
 
 function accueilDiap(type, sujet, image){
-	let srcImageCentral = "../images/" + type + "/" + sujet +" (" + image + ").jpg";
-	let valueSubmit = "Fermer&nbsp;la&nbsp;fen&ecirc;tre";	
-	let backgroundColor = "background-color:grey";
-	if (type == "Astro"){
-		let contains = ('<br><div id="titreDiap">' + detailInfoPanorama[sujet][image].titre + '</div><br><IMG id="imageCentrale" SRC=" ' + srcImageCentral + '" name="slider"><br><br><input id="submit" type="submit" name="submit" value=' + valueSubmit +' onClick="window.close()" margin="auto" text-align="center" style=' + backgroundColor +'>');
-	} else {
-		let contains = ('<br><IMG id="imageCentrale" SRC=" ' + srcImageCentral + '" name="slider"><br><br><input id="submit" type="submit" name="submit" value=' + valueSubmit +' onClick="window.close()" margin="auto" text-align="center" style=' + backgroundColor +'>');
-	}
+	var srcImageCentral = "../images/" + type + "/" + sujet +" (" + image + ").jpg";
+	var valueSubmit = "Fermer&nbsp;la&nbsp;fen&ecirc;tre";	
+	var backgroundColor = "background-color:grey";
+	// if (type == "Astro"){
+	// 	var contains = ('<br><div id="titreDiap">' + detailInfoPanorama[sujet][image].titre + '</div><IMG id="imageCentrale" SRC=" ' + srcImageCentral + '" name="slider"><br><br><input id="submit" type="submit" name="submit" value=' + valueSubmit +' onClick="window.close()" margin="auto" text-align="center" style=' + backgroundColor +'>');
+	// } else {
+		var contains = ('<IMG id="imageCentrale" SRC=" ' + srcImageCentral + '" name="slider"><br><br><input id="submit" type="submit" name="submit" value=' + valueSubmit +' onClick="window.close()" margin="auto" text-align="center" style=' + backgroundColor +'>');
+	// }
 	document.getElementById('imageCentr').innerHTML += contains;
 }
 
 function imageSuivante (type, sujet, images){
-	// let im = "../images/icon/rightArrow.png";
+	// var im = "../images/icon/rightArrow.png";
 	if (images == nbrImageSujet[parameters[1]][0]){
-		let ima = "../images/Miniatures/" + type + "/" + sujet +" (1).jpg";
+		var ima = "../images/Miniatures/" + type + "/" + sujet +" (1).jpg";
 	} else {
-		let ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (images + 1) + ").jpg";
+		var ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (images + 1) + ").jpg";
 	}	
-	let contains = ('<IMG id="flecheDroite" class="center" SRC=" '+ ima + '" title="Next" margin="auto" width="100%" name="nextPicture"><br><br>Suivante </A>');
+	var contains = ('<IMG id="flecheDroite" class="center" SRC=" '+ ima + '" title="Next" margin="auto" style="width:100%" name="nextPicture">Suivante</A>');
 	document.getElementById('flecheDroite').innerHTML += contains;
 }
 
 function imagePrecedente (type, sujet, images){
-	// let im = "../images/icon/leftArrow.png";
+	// var im = "../images/icon/leftArrow.png";
 	if (images == 1){
-		let ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (nbrImageSujet[parameters[1]][0]) + ").jpg";
+		var ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (nbrImageSujet[parameters[1]][0]) + ").jpg";
 	} else {
-		let ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (images - 1) + ").jpg";
+		var ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (images - 1) + ").jpg";
 	}	
-	let contains = ('<IMG id="flecheGauche" SRC=" '+ ima + '" title="Previous" margin="auto" width="100%" name="prevPicture"><br><br>Precedente </A>');
+	var contains = ('<IMG id="flecheGauche" class="center" SRC=" '+ ima + '" title="Previous" margin="auto" style="width:80%" name="prevPicture"><br>Precedente </A>');
 	document.getElementById('flecheGauche').innerHTML += contains;
 }
 
+function titrePhotoPano (){
+	imgCt = nbrImageSujet[parameters[1]][0];
+	if (parameters[0] == "Astro"){
+		//Affiche le titre
+		document.getElementById('titreDiap').innerHTML = '<div id="titreDiap"><br>' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div><br><ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
+	}
+}
+
+function detailPhoto (){
+	imgCt = nbrImageSujet[parameters[1]][0];
+	if (parameters[0] == "Astro"){
+		// Affiche les détails de la photo sur le diaporama
+		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Lieu : " + detailInfoPanorama[parameters[1]][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[parameters[1]][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[parameters[1]][thisImg].heure + "</li><br><li>" + "Objectif : " + detailInfoPanorama[parameters[1]][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[parameters[1]][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[parameters[1]][thisImg].typePhoto + "</li><br><li>" + "Sensibilite : " + detailInfoPanorama[parameters[1]][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[parameters[1]][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[parameters[1]][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[parameters[1]][thisImg].NbrPhoto + "<bt></li></ul>" ;
+	}
+}
+
 function newSlide(direction) {
-	imgCt = nbrImageSujet[parameters[1]][0] ;            
+	imgCt = nbrImageSujet[parameters[1]][0];
 	if (document.images) {
 		thisImg = thisImg + direction;
 		if (thisImg < 1) {
@@ -339,8 +355,8 @@ function newSlide(direction) {
 		// alert (parameters[0] + " " + parameters[1] + " " + thisImg);
 		// document.getElementById('asideDiaporama').innerHTML = "Lieu : " + detailInfoPanorama[sujet][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[sujet][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[sujet][thisImg].heure;
 		if (parameters[0] == "Astro"){
-			document.getElementById('titreDiap').innerHTML = '<div id="titreDiap">' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div>';
-			document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Lieu : " + detailInfoPanorama[parameters[1]][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[parameters[1]][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[parameters[1]][thisImg].heure + "</li><br><li>" + "Objectif : " + detailInfoPanorama[parameters[1]][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[parameters[1]][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[parameters[1]][thisImg].typePhoto + "</li><br><li>" + "Sensibilite : " + detailInfoPanorama[parameters[1]][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[parameters[1]][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[parameters[1]][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[parameters[1]][thisImg].NbrPhoto + "<bt></li></ul>" ;
+			//Affiche le titre +  les détails de la photo sur le diaporama
+			document.getElementById('titreDiap').innerHTML = '<div id="titreDiap"><br>' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div><br><ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
 		}
 
 		if (thisImg == imgCt){
@@ -367,7 +383,7 @@ function newSlide(direction) {
 //Test de fonction
 
 function maFonction(){
-	let nouvVariable = prompt("Donne la variable : ", "");
+	var nouvVariable = prompt("Donne la variable : ", "");
 	if (nouvVariable) {
 		alert("Tu as mis : " + nouvVariable);
 	} else {
@@ -376,23 +392,23 @@ function maFonction(){
 }
 
 function maFonction2(){
-	let premierChiffre = prompt("Donne le premier chiffre : ", "");
-	let calcul = prompt ("Choisir le signe de calcul", "");
-	let deuxiemeChiffre = prompt("Donnes le deuxième chiffre :", "");
+	var premierChiffre = prompt("Donne le premier chiffre : ", "");
+	var calcul = prompt ("Choisir le signe de calcul", "");
+	var deuxiemeChiffre = prompt("Donnes le deuxième chiffre :", "");
 	if (calcul == "+"){
-		let resultat = (parseInt(premierChiffre) + parseInt(deuxiemeChiffre));
+		var resultat = (parseInt(premierChiffre) + parseInt(deuxiemeChiffre));
 		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
 		return;
 	} if (calcul == "-"){
-		let resultat = (parseInt(premierChiffre) - parseInt(deuxiemeChiffre));
+		var resultat = (parseInt(premierChiffre) - parseInt(deuxiemeChiffre));
 		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
 		return;
 	} if (calcul == "*"){
-		let resultat = (parseInt(premierChiffre) * parseInt(deuxiemeChiffre));
+		var resultat = (parseInt(premierChiffre) * parseInt(deuxiemeChiffre));
 		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
 		return;
 	} if (calcul == "/"){
-		let resultat = (parseInt(premierChiffre) / parseInt(deuxiemeChiffre));
+		var resultat = (parseInt(premierChiffre) / parseInt(deuxiemeChiffre));
 		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
 		return;
 	} else {
@@ -402,10 +418,10 @@ function maFonction2(){
 }
 
 function test(){
-	let nom = "MICHEL";
-	let prenom = "Florian";
-	let tab = [1, 50, true, false, "Text", nom, prenom, [1,2,3], {}, null, NaN];
-	let obj = {name:"Toto", age:31, tableau:tab, tabs:["a","b",1], objet:{prop:"valeurs"} };
+	var nom = "MICHEL";
+	var prenom = "Florian";
+	var tab = [1, 50, true, false, "Text", nom, prenom, [1,2,3], {}, null, NaN];
+	var obj = {name:"Toto", age:31, tableau:tab, tabs:["a","b",1], objet:{prop:"valeurs"} };
 	
 	console.log (nom);
 	console.log (prenom);
@@ -414,7 +430,7 @@ function test(){
 	console.log (tab[6] + " " + tab[5]);
 	console.log (obj.age);
 
-	let essai = "objet";
+	var essai = "objet";
 	
 	// alert ("Tu t'appel : " + tab[6] + " " + tab[5]);
 	// alert ("Ton age est : " + obj.age + " ans");
@@ -427,7 +443,7 @@ function test(){
 
 function test2(parametre){
 	alert (parametre);
-	let tempo = "Tempo";
+	var tempo = "Tempo";
 	alert (tempo);
 }
 
@@ -436,12 +452,12 @@ function employee (name, jobtitle, born){
 	this.jobtitle=jobtitle;
 	this.born=born;
 	// alert ("Votre nom est : " + this.name + "\n" + "Votre job est :" + this.jobtitle + "\n" + "Votre année de naissance est : " + this.born);	
-	let born = parseInt(this.born);
-	let aujourdhui = new Date();
-	let annee = aujourdhui.getUTCFullYear();
+	born = parseInt(this.born);
+	var aujourdhui = new Date();
+	var annee = aujourdhui.getUTCFullYear();
 	// alert (typeof born);
 	// alert (typeof annee);
-	let age = (annee - born);
+	var age = (annee - born);
 	document.write ("Résumé :" + "<br>" 
 		+ "Votre nom est : " + this.name + "<br>" 
 		+ "Votre job est :" + this.jobtitle + "<br>" 
@@ -450,14 +466,14 @@ function employee (name, jobtitle, born){
 }
 
 function newEmployee (){
-	let name = prompt ("Votre nom");
-	let jobtitle = prompt ("Votre métier : ");
-	let born = prompt ("Votre annee de naissance");
-	let employ = new employee(name, jobtitle, born);
+	var name = prompt ("Votre nom");
+	var jobtitle = prompt ("Votre métier : ");
+	var born = prompt ("Votre annee de naissance");
+	var employ = new employee(name, jobtitle, born);
 }
 
 // function newEmployee(){
-	// let fred=new employee("Fred","caverman",1970);
+	// var fred=new employee("Fred","caverman",1970);
 	// employee.prototype.salary=null;
 	// fred.salary=2000;
 	// alert (fred.name + "\n" + fred.salary + "\n" + fred.jobtitle);

@@ -37,22 +37,35 @@ h1, h3 {
 }
 
 #imageCentrale{
-	height: 550px;
+	display: inline-block;
+	height: 530px;
 	text-align: center;
+	/* width:80%; */
 	/* padding-top: 3px; */
 	/* padding-bottom: 3px; */
 }
 
-#flecheGauche{
-	width: auto;
+#MenuGauche{
+	width: 12%;
+}
+
+#flecheGauche{	
+	width: 80%;
 	text-align: center;
 	text-decoration: underline;
+	margin-top: 85%;
+}
+
+#MenuDroit{
+	width: 12%;
 }
 
 #flecheDroite{
-	width: auto;
+	display: inline-table;
+	width: 80%;
 	text-align: center;
 	text-decoration: underline;
+	margin-top: 0px;
 }
 
 #boutonFerme{
