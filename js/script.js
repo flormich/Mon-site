@@ -128,8 +128,8 @@ var detailInfoPanorama = {
 		4:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		5:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	saturne:{1:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	saturne:{1:{titre:"Premiere saturne", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Premiere saturne", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		3:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		4:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		5:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
@@ -137,9 +137,9 @@ var detailInfoPanorama = {
 		7:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		8:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		9:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		10:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		11:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		12:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Occultation Saturne", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Occultation Saturne", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		12:{titre:"Occultation Saturne", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
 	uranus:{1:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
@@ -276,7 +276,7 @@ function afficheInfoDiaporama(type, sujet, number){
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
 	var newSujet = sujet.ucFirst();
 	if (type == "Astro"){
-		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Objectif : " + detailInfoPanorama[sujet][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[sujet][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[sujet][thisImg].typePhoto + "<br><br>" + "Sensibilite : " + detailInfoPanorama[sujet][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[sujet][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[sujet][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[sujet][thisImg].NbrPhoto + "<bt></li></ul>" ;
+		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Objectif : " + detailInfoPanorama[sujet][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[sujet][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[sujet][thisImg].typePhoto + "<br><br>" + "Sensibilite : " + detailInfoPanorama[sujet][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[sujet][thisImg].focale + "<br>" + "Tps de pose : " + detailInfoPanorama[sujet][thisImg].tpsPose + "<br>" + "Nbr photo superposé : " + detailInfoPanorama[sujet][thisImg].NbrPhoto + "<bt></li></ul>" ;
 	} else {
 		document.getElementById('asideDiaporama').innerHTML = "<ul><li>Aucune information</li></ul>";
 	}
@@ -309,7 +309,7 @@ function imageSuivante (type, sujet, images){
 	} else {
 		var ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (images + 1) + ").jpg";
 	}	
-	var contains = ('<IMG id="flecheDroite" class="center" SRC=" '+ ima + '" title="Next" margin="auto" style="width:100%" name="nextPicture">Suivante</A>');
+	var contains = ('<IMG id="flecheDroite" class="center" SRC=" '+ ima + '" title="Next" margin="auto" name="nextPicture"><br>Suivante</A>');
 	document.getElementById('flecheDroite').innerHTML += contains;
 }
 
@@ -320,7 +320,7 @@ function imagePrecedente (type, sujet, images){
 	} else {
 		var ima = "../images/Miniatures/" + type + "/" + sujet +" (" + (images - 1) + ").jpg";
 	}	
-	var contains = ('<IMG id="flecheGauche" class="center" SRC=" '+ ima + '" title="Previous" margin="auto" style="width:80%" name="prevPicture"><br>Precedente </A>');
+	var contains = ('<IMG id="flecheGauche" class="center" SRC=" '+ ima + '" title="Previous" margin="auto" name="prevPicture"><br>Precedente </A>');
 	document.getElementById('flecheGauche').innerHTML += contains;
 }
 
@@ -328,15 +328,23 @@ function titrePhotoPano (){
 	imgCt = nbrImageSujet[parameters[1]][0];
 	if (parameters[0] == "Astro"){
 		//Affiche le titre
-		document.getElementById('titreDiap').innerHTML = '<div id="titreDiap"><br>' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div><br><ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
+		document.getElementById('titreDiap').innerHTML = '<div id="titreDiap">' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div><ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
 	}
 }
+
+// function infoDatePano (){
+// 	imgCt = nbrImageSujet[parameters[1]][0];
+// 	if (parameters[0] == "Astro"){
+// 		//Affiche le titre
+// 		document.getElementById('infoDatePano').innerHTML = '<ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
+// 	}
+// }
 
 function detailPhoto (){
 	imgCt = nbrImageSujet[parameters[1]][0];
 	if (parameters[0] == "Astro"){
 		// Affiche les détails de la photo sur le diaporama
-		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Lieu : " + detailInfoPanorama[parameters[1]][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[parameters[1]][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[parameters[1]][thisImg].heure + "</li><br><li>" + "Objectif : " + detailInfoPanorama[parameters[1]][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[parameters[1]][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[parameters[1]][thisImg].typePhoto + "</li><br><li>" + "Sensibilite : " + detailInfoPanorama[parameters[1]][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[parameters[1]][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[parameters[1]][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[parameters[1]][thisImg].NbrPhoto + "<bt></li></ul>" ;
+		document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Objectif : " + detailInfoPanorama[sujet][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[sujet][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[sujet][thisImg].typePhoto + "<br><br>" + "Sensibilite : " + detailInfoPanorama[sujet][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[sujet][thisImg].focale + "<br>" + "Tps de pose : " + detailInfoPanorama[sujet][thisImg].tpsPose + "<br>" + "Nbr photo superposé : " + detailInfoPanorama[sujet][thisImg].NbrPhoto + "<bt></li></ul>" ;
 	}
 }
 
@@ -356,7 +364,8 @@ function newSlide(direction) {
 		// document.getElementById('asideDiaporama').innerHTML = "Lieu : " + detailInfoPanorama[sujet][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[sujet][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[sujet][thisImg].heure;
 		if (parameters[0] == "Astro"){
 			//Affiche le titre +  les détails de la photo sur le diaporama
-			document.getElementById('titreDiap').innerHTML = '<div id="titreDiap"><br>' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div><br><ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
+			document.getElementById('titreDiap').innerHTML = '<div id="titreDiap">' + detailInfoPanorama[parameters[1]][thisImg].titre + '</div><br><ul id="infoTps"><li>' + 'Lieu : ' + detailInfoPanorama[parameters[1]][thisImg].lieu + '<br>' + 'Date : ' + detailInfoPanorama[parameters[1]][thisImg].date + '<br>' + 'Heure : ' + detailInfoPanorama[parameters[1]][thisImg].heure + '</li></ul><br>' ;
+			document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Objectif : " + detailInfoPanorama[parameters[1]][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[parameters[1]][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[parameters[1]][thisImg].typePhoto + "<br><br>" + "Sensibilite : " + detailInfoPanorama[parameters[1]][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[parameters[1]][thisImg].focale + "<br>" + "Tps de pose : " + detailInfoPanorama[parameters[1]][thisImg].tpsPose + "<br>" + "Nbr photo superposé : " + detailInfoPanorama[parameters[1]][thisImg].NbrPhoto + "<bt></li></ul>" ;
 		}
 
 		if (thisImg == imgCt){

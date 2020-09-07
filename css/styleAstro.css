@@ -64,28 +64,23 @@ nav{
 	padding: 10px 18px 0px 18px;
 }
 
-/* nav {
-	display: inline-table;
-	text-decoration: none;
-	padding: 20px 18px;
-	color: #545454;
-	font-size: 15px;
-} */
-
 a{
 	display: inline-table;
 	text-decoration: none;
-	padding: 20px 18px;
+	padding: 15px 10px;
 	color: #545454;
 	font-size: 15px;
 }
 
-#diaporamaCss{
-	display: block;
-	text-decoration: none;
-	padding: 20px 18px;
+#diaporamaCss tr td{
+	/* display: block; */
+	/* text-decoration: none; */
+	/* padding: 15px 10px; */
 	color: #545454;
-	font-size: 15px;
+	/* font-size: 15px; */
+
+	/* border-collapse: collapse; */
+	/* border: 1px solid white;  */
 }
 
 #div2{
@@ -93,6 +88,7 @@ a{
 	margin: 0 auto;
 	float: left;
 	width:75%;
+	margin-top: 15px;
 }
 
 #diap{
@@ -101,8 +97,9 @@ a{
 
 section{
 	width:100%;
-	padding: 0px;
+	/* padding: 0px; */
 	height: 90px;
+
 }
 
 /* #miniature{
@@ -118,7 +115,7 @@ ul{
 }
 
 table{
-	border-collapse: collapse;
+	/* border-collapse: collapse; */
 	text-align: center;
 
 }
@@ -151,35 +148,51 @@ figcaption{
 	position: fixed;
 	padding-top: 5px;
 	padding-bottom: 0px;
-	margin: 20px 20px 0px 75%;
+	margin: 50px 20px 0px 75%;
 	border-radius: 80px;
-	height: 55%;
+	height: 60%;
 }
-
-
 
 #aside1 ol{
 	text-align: left;
 	font-weight: bold;
 }
 
+#asideDiaporama li{
+	text-align: left;
+	/* padding-left: 10px; */
+}
+
 #asideDiaporama{
+	display: inline-flex;
+	width: 180px;
 	text-decoration: none;
 	background-color: RGBa(00, 00, 00, 1);
-	width: 100%;
-	font-size: 80%;
+	/* width: 100%; */
+	font-size: 75%;
 	color: white;
 	border: 2px solid #AAAAFF;
 
 	/* float: right; */
 	/* position: relative; */
-	padding-top: 15px;
-	padding-bottom: 1px;
+	padding: 5px 5px 5px 5px;
 	margin: auto;
 	/* margin: 31.5rem 0px 0px 75%; */
-	margin-top: 5rem;
+	margin-top: 1rem;
 	border-radius: 30px;
 	height: 280px;
+}
+
+/* td {
+	border: 1px solid white;
+	border-collapse: collapse;;
+} */
+
+#flecheGauche #flecheDroite{
+	width: 180px;	
+	text-align: center;
+	text-decoration: underline;
+	/* margin-top: 85%; */
 }
 
 #asideDiaporama ol{
@@ -218,7 +231,6 @@ p{
 	
 
 }
-
 .titremenu2:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -229,7 +241,6 @@ p{
 	
 
 }
-
 .titremenu3:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -240,7 +251,6 @@ p{
 	
 
 }
-
 .titremenu4:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -251,7 +261,6 @@ p{
 	
 
 }
-
 .titremenu5:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -272,7 +281,6 @@ p{
 	
 
 }
-
 .titremenu7:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -283,7 +291,6 @@ p{
 
 
 }
-
 .titremenu8:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -292,7 +299,6 @@ p{
 	border-top: 5px solid #FFDDFF;
 	background-color: RGBa(255, 210, 255, 0.2)
 }
-
 .titremenu9:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -301,7 +307,6 @@ p{
 	border-top: 5px solid #8888AA;
 	background-color: RGBa(88, 88, 110, 0.2)
 }
-
 .titremenu10:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -310,7 +315,6 @@ p{
 	border-top: 5px solid #B735C4;
 	background-color: RGBa(183, 53, 196, 0.2)
 }
-
 .titremenu11:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -319,7 +323,6 @@ p{
 	border-top: 5px solid #00FFE8;
 	background-color: RGBa(0, 255, 232, 0.2)
 }
-
 .titremenu12:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -328,7 +331,6 @@ p{
 	border-top: 5px solid #FF0000;
 	background-color: RGBa(255, 0, 0, 0.2)
 }
-
 .titremenu13:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -337,7 +339,6 @@ p{
 	border-top: 5px solid #08FF00;
 	background-color: RGBa(8, 255, 0, 0.2)
 }
-
 .titremenu14:hover{
 	font-style: oblique;
 	font-weight: bold;
@@ -419,5 +420,7 @@ nav li:hover a{
 }
 
 #titreDiap{
+	width: 180px;;
 	color: whitesmoke;
+	/* height: 50px; */
 }

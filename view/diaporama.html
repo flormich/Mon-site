@@ -10,55 +10,60 @@
     <BODY BGCOLOR="#000000">
         <FONT SIZE="+1" FACE="Helvetica, Arial, sans serif">
         </FONT>
+
         <TABLE id="diaporamaCss">
-            <TR>
-                <TD id="MenuGauche">
+            <tr>
+                <td id="MenuGauche">
                     <div id="titreDiap">
-                            <script language = "JAVASCRIPT"  >
-                                var parameters = location.search.substring(1).split("&");
-                                var thisImg = parseInt(parameters[2], 10);
-                                titrePhotoPano(parameters[0], parameters[1], thisImg);
-                            </script>
-                    </div>
-                    
-                    <div> 
-                        <A HREF="javascript:newSlide(-1)" id="flecheGauche" class="transition_box">
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                        <script language = "JAVASCRIPT"  >
                             var parameters = location.search.substring(1).split("&");
                             var thisImg = parseInt(parameters[2], 10);
-                            imagePrecedente(parameters[0], parameters[1], thisImg);
-                        </SCRIPT>
-                        </A>
+                            titrePhotoPano(parameters[0], parameters[1], thisImg);
+                        </script>
                     </div>
-                </TD>
-                <TD id="imageCentrale">
+                </td>
+                <td rowspan="3" width="80%">
                     <div id="imageCentr" class="fade-in"></div>
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            var parameters = location.search.substring(1).split("&");
-                            var thisImg = parseInt(parameters[2], 10);                            
-                            accueilDiap(parameters[0], parameters[1], thisImg);
-                        </SCRIPT>
-                    </div>
-                </TD>
-                <TD id="MenuDroit" >
-                    <div>
-                        <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" >
+                    <SCRIPT LANGUAGE = "JAVASCRIPT">
+                        var parameters = location.search.substring(1).split("&");
+                        var thisImg = parseInt(parameters[2], 10);                            
+                        accueilDiap(parameters[0], parameters[1], thisImg);
+                    </SCRIPT>
+                </div>
+                </td>
+                <td id="MenuDroit">
+                    <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" >
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
                             var parameters = location.search.substring(1).split("&");
                             var thisImg = parseInt(parameters[2], 10);
                             imageSuivante(parameters[0], parameters[1], thisImg);
                         </SCRIPT>
-                        </A>
-                    </div>
-                    
+                    </A>
+                </td>
+            </tr>
+            <tr>
+                <td></td>            
+                <td rowspan="2">
                     <div id="asideDiaporama" class="fade-in">                    
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
                             var parameters = location.search.substring(1).split("&");
                             afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
                         </SCRIPT>						
                     </div>
-                </TD>
-            </TR>        
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <A HREF="javascript:newSlide(-1)" id="flecheGauche" class="transition_box">
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
+                            imagePrecedente(parameters[0], parameters[1], thisImg);
+                        </SCRIPT>
+                        </A>
+                </td>
+            </tr>
             <!-- <section id="asideDiaporama" class="fade-in" width="25%">                
                 <div>                    
                     <SCRIPT LANGUAGE = "JAVASCRIPT">
@@ -69,6 +74,74 @@
             </section> -->
         </TABLE>
 
+
+        <!-- <TABLE id="diaporamaCss">
+            <tr>
+                <td id="MenuGauche">A
+                    <div id="titreDiap">
+                        <script language = "JAVASCRIPT"  >
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
+                            titrePhotoPano(parameters[0], parameters[1], thisImg);
+                        </script>
+                    </div>
+                </td>
+                <td rowspan="3" id="imageCentrale">B
+                    <div id="imageCentr" class="fade-in"></div>
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);                            
+                            accueilDiap(parameters[0], parameters[1], thisImg);
+                        </SCRIPT>
+                    </div>
+                </td>
+                <td id="MenuDroit">C
+                    <div>
+                        <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" >
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
+                            imageSuivante(parameters[0], parameters[1], thisImg);
+                        </SCRIPT>
+                        </A>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>D
+                    <div id="infoDatePano">
+                        <script language = "JAVASCRIPT"  >
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
+                            infoDatePano(parameters[0], parameters[1], thisImg);
+                        </script>
+                    </div>
+                </td>
+            
+                <td rowspan="2">E
+                    <div id="asideDiaporama" class="fade-in">                    
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
+                        </SCRIPT>						
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>F
+                    <div> 
+                        <A HREF="javascript:newSlide(-1)" id="flecheGauche" class="transition_box">
+                        <SCRIPT LANGUAGE = "JAVASCRIPT">
+                            var parameters = location.search.substring(1).split("&");
+                            var thisImg = parseInt(parameters[2], 10);
+                            imagePrecedente(parameters[0], parameters[1], thisImg);
+                        </SCRIPT>
+                        </A>
+                    </div>
+                </td>
+            </tr>
+        </TABLE>-->
+
         <!-- <SCRIPT LANGUAGE = "JAVASCRIPT">        
             thisImg = 0   
             var parameters = location.search.substring(1).split("&");
@@ -76,7 +149,7 @@
             newSlide(direction);            
         </SCRIPT> -->
     </BODY>
-    <br><br>
+    <br><br><br>
     <footer>
         <hr>
         <p class="pfooter">Site développé par Florian Aurigoth</p>

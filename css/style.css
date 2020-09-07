@@ -45,28 +45,16 @@ h1, h3 {
 	/* padding-bottom: 3px; */
 }
 
-#MenuGauche{
-	width: 12%;
-}
+/* #MenuGauche #MenuDroit{
+	width: 150px;
+} */
 
-#flecheGauche{	
-	width: 80%;
+/* #flecheGauche #flecheDroite{
+	width: 180px;	
 	text-align: center;
 	text-decoration: underline;
-	margin-top: 85%;
-}
-
-#MenuDroit{
-	width: 12%;
-}
-
-#flecheDroite{
-	display: inline-table;
-	width: 80%;
-	text-align: center;
-	text-decoration: underline;
-	margin-top: 0px;
-}
+	/* margin-top: 85%; */
+} */
 
 #boutonFerme{
 	margin: auto;
@@ -87,4 +75,3 @@ h1, h3 {
 	/* -webkit-animation-duration: 3.5s; */
 	        animation-duration: 3.5s;
 }
-
