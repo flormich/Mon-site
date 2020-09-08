@@ -4,17 +4,15 @@
         <META NAME="description" CONTENT="Un exemple de Javascript pour un diaporama">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/styleAstro.css">
-        <script type="text/javascript" src="../js/script.js"></script>
-        
+        <script type="text/javascript" src="../js/script.js"></script>        
     </HEAD>
-    <BODY BGCOLOR="#000000">
-        <FONT SIZE="+1" FACE="Helvetica, Arial, sans serif">
-        </FONT>
 
+    <BODY BGCOLOR="#000000">
+        <FONT SIZE="+1" FACE="Helvetica, Arial, sans serif"></FONT>
         <TABLE id="diaporamaCss">
             <tr>
                 <td id="MenuGauche">
-                    <div id="titreDiap">
+                    <div id="titreDiap" style="margin-top: -90px">
                         <script language = "JAVASCRIPT"  >
                             var parameters = location.search.substring(1).split("&");
                             var thisImg = parseInt(parameters[2], 10);
@@ -32,7 +30,7 @@
                 </div>
                 </td>
                 <td id="MenuDroit">
-                    <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" >
+                    <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" style="height: 180px;">
                         <SCRIPT LANGUAGE = "JAVASCRIPT">
                             var parameters = location.search.substring(1).split("&");
                             var thisImg = parseInt(parameters[2], 10);
@@ -64,92 +62,11 @@
                         </A>
                 </td>
             </tr>
-            <!-- <section id="asideDiaporama" class="fade-in" width="25%">                
-                <div>                    
-                    <SCRIPT LANGUAGE = "JAVASCRIPT">
-                        var parameters = location.search.substring(1).split("&");
-                        afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
-                    </SCRIPT>						
-                </div>
-            </section> -->
         </TABLE>
-
-
-        <!-- <TABLE id="diaporamaCss">
-            <tr>
-                <td id="MenuGauche">A
-                    <div id="titreDiap">
-                        <script language = "JAVASCRIPT"  >
-                            var parameters = location.search.substring(1).split("&");
-                            var thisImg = parseInt(parameters[2], 10);
-                            titrePhotoPano(parameters[0], parameters[1], thisImg);
-                        </script>
-                    </div>
-                </td>
-                <td rowspan="3" id="imageCentrale">B
-                    <div id="imageCentr" class="fade-in"></div>
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            var parameters = location.search.substring(1).split("&");
-                            var thisImg = parseInt(parameters[2], 10);                            
-                            accueilDiap(parameters[0], parameters[1], thisImg);
-                        </SCRIPT>
-                    </div>
-                </td>
-                <td id="MenuDroit">C
-                    <div>
-                        <A HREF="javascript:newSlide(1)" id="flecheDroite" class="transition_box" >
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            var parameters = location.search.substring(1).split("&");
-                            var thisImg = parseInt(parameters[2], 10);
-                            imageSuivante(parameters[0], parameters[1], thisImg);
-                        </SCRIPT>
-                        </A>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>D
-                    <div id="infoDatePano">
-                        <script language = "JAVASCRIPT"  >
-                            var parameters = location.search.substring(1).split("&");
-                            var thisImg = parseInt(parameters[2], 10);
-                            infoDatePano(parameters[0], parameters[1], thisImg);
-                        </script>
-                    </div>
-                </td>
-            
-                <td rowspan="2">E
-                    <div id="asideDiaporama" class="fade-in">                    
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            var parameters = location.search.substring(1).split("&");
-                            afficheInfoDiaporama(parameters[0], parameters[1], parameters[2]);
-                        </SCRIPT>						
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>F
-                    <div> 
-                        <A HREF="javascript:newSlide(-1)" id="flecheGauche" class="transition_box">
-                        <SCRIPT LANGUAGE = "JAVASCRIPT">
-                            var parameters = location.search.substring(1).split("&");
-                            var thisImg = parseInt(parameters[2], 10);
-                            imagePrecedente(parameters[0], parameters[1], thisImg);
-                        </SCRIPT>
-                        </A>
-                    </div>
-                </td>
-            </tr>
-        </TABLE>-->
-
-        <!-- <SCRIPT LANGUAGE = "JAVASCRIPT">        
-            thisImg = 0   
-            var parameters = location.search.substring(1).split("&");
-            var thisImg = parseInt(parameters[2], 10); 
-            newSlide(direction);            
-        </SCRIPT> -->
     </BODY>
+
     <br><br><br>
+
     <footer>
         <hr>
         <p class="pfooter">Site développé par Florian Aurigoth</p>
