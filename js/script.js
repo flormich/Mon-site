@@ -44,30 +44,43 @@ var nbrImageSujet = {
     marion:[9],
     yulia:[5],
 
-    canada:[24],
-    france:[19],
+    canada:[20],
+    france:[25],
     italie:[15],
     japon:[26],
     martinique:[9],
 
-	bouquetin:[7],
-	ecureuil:[0],
-	marmotte:[8],
+	bouquetin:[15],
+	ecureuil:[4],
+	marmotte:[21],
+	perroquet:[6],
+	guepier:[3],
 	
-	urbex:[0],
+	urbex1:[7],
+	urbex2:[15],
+	urbex3:[6],
+	urbex4:[6],
+	urbex5:[4],
+	urbex6:[6],
+	urbex7:[9],
+
+	fleur:[14],
+	goutte:[1],
+	insecte_rampant:[11],
+	insecte_volant:[11],
 
     soleil:[11],
     mercure:[0],
     venus:[4],
-    phenomene:[12],
+    phenomene:[19],
     lune:[13],
     mars:[4],
     jupiter:[5],
     saturne:[12],
-    voie_lactee:[41],
-    circumPolaire:[6],
-    ciel_profond:[2],
-    comete:[2],	
+    voie_lactee:[42],
+    circumPolaire:[9],
+    ciel_profond:[3],
+    comete:[5],	
 };
 var detailInfoPanorama = {
 	soleil:{1:{titre:"Tâche solaire", lieu:"Bourg-en-bresse (01)", date:"20/05/2000", heure:"17h00", objectif:"Celestron 203 + oculaire 26mm", materielPhoto:"Canon 500N", typePhoto:"Argentique", sensibilite:"200 iso", focale:"2 000mm", tpsPose:"1/1000sec", NbrPhoto:"1"},
@@ -98,9 +111,16 @@ var detailInfoPanorama = {
 		7:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		8:{titre:"Orage", lieu:"Noyer-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		9:{titre:"Cassiopé", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		10:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		11:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		12:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Flash iridium", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Le ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		12:{titre:"Le ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		13:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		14:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		15:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		16:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		17:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		18:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		19:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
 	lune:{1:{titre:"Dernier quartier", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		2:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
@@ -190,6 +210,7 @@ var detailInfoPanorama = {
 		39:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		40:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		41:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		42:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		
 	},
 	circumPolaire:{1:{titre:"Filé détoile", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
@@ -198,14 +219,19 @@ var detailInfoPanorama = {
 		4:{titre:"Filé détoile", lieu:"Noyers-sur-jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		5:{titre:"Filé détoile", lieu:"Vallon de combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		6:{titre:"Filé détoile", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Filé détoile", lieu:"Morestel (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Filé détoile", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Filé détoile", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
 	ciel_profond:{1:{titre:"Galaxie d'andromède", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		2:{titre:"Galaxie d'andromède", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Amas", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	comete:{1:{titre:"Neowise", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Neowise", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	comete:{1:{titre:"Hale-Bop", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Hale-Bop", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Holmes", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Neowise", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Neowise", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
 };
 
@@ -217,11 +243,11 @@ function menuHorizontal(type, sujet){
 	} if (type == "Portrait"){
 		var contains = ('<a href="../index.html" id="titre"><h2>Portrait</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Portrait&anais" target="">Anaïs</a></li><li class="titremenu2"><a href="viewPicture.html?Portrait&anais2 " target="">Anais2 </a></li><li class="titremenu3"><a href="viewPicture.html?Portrait&angelique " target="">Angelique </a></li><li class="titremenu4"><a href="viewPicture.html?Portrait&johan" target="">Johan</a></li><li class="titremenu5"><a href="viewPicture.html?Portrait&karine " target="">Karine </a></li><li class="titremenu6"><a href="viewPicture.html?Portrait&mathilde" target="">Mathilde</a></li><li class="titremenu7"><a href="viewPicture.html?Portrait&marion " target="">Marion </a></li><li class="titremenu8"><a href="viewPicture.html?Portrait&yulia " target="">Yulia </a></li></ul></section>');
 	} if (type == "Animaux"){
-		var contains = ('<a href="../index.html" id="titre"><h2>Animaux</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Animaux&bouquetin" target="">Bouquetin</a></li><li class="titremenu2"><a href="viewPicture.html?Animaux&ecureuil" target="">Ecureuil</a></li><li class="titremenu3"><a href="viewPicture.html?Animaux&marmotte" target="">Marmotte</a></li></ul></section>');
-	} if (type == "Miniature"){
-		var contains = ('<a href="../index.html" id="titre"><h2>Miniatures</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Miniature&miniature1" target="">Miniatures1</a></li><li class="titremenu2"><a href="viewPicture.html?Miniature&miniature2" target="">Miniatures2</a></li><li class="titremenu3"><a href="viewPicture.html?Miniature&miniature3" target="">Miniatures3</a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Animaux</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Animaux&bouquetin" target="">Bouquetin</a></li><li class="titremenu2"><a href="viewPicture.html?Animaux&ecureuil" target="">Ecureuil</a></li><li class="titremenu3"><a href="viewPicture.html?Animaux&marmotte" target="">Marmotte</a></li><li class="titremenu4"><a href="viewPicture.html?Animaux&perroquet" target="">Perroquet</a></li><li class="titremenu5"><a href="viewPicture.html?Animaux&guepier" target="">Guepier</a></li></ul></section>');
+	} if (type == "Macro"){
+		var contains = ('<a href="../index.html" id="titre"><h2>Macro</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Macro&fleur" target="">Fleur</a></li><li class="titremenu2"><a href="viewPicture.html?Macro&goutte" target="">Goutte</a></li><li class="titremenu3"><a href="viewPicture.html?Macro&insecte_rampant" target="">Insecte rampant</a></li><li class="titremenu4"><a href="viewPicture.html?Macro&insecte_volant" target="">Insecte volant</a></li></ul></section>');
 	} if (type == "Urbex"){
-		var contains = ('<a href="../index.html" id="titre"><h2>Urbex</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Urbex&urbex1" target="">Urbex1</a></li><li class="titremenu2"><a href="viewPicture.html?Urbex&urbex2" target="">Urbex2</a></li><li class="titremenu3"><a href="viewPicture.html?Urbex&urbex3" target="">Urbex3</a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Urbex</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Urbex&urbex1" target="">Urbex1</a></li><li class="titremenu2"><a href="viewPicture.html?Urbex&urbex2" target="">Urbex2</a></li><li class="titremenu3"><a href="viewPicture.html?Urbex&urbex3" target="">Urbex3</a></li><li class="titremenu4"><a href="viewPicture.html?Urbex&urbex4" target="">Urbex4</a></li><li class="titremenu5"><a href="viewPicture.html?Urbex&urbex5" target="">Urbex5</a></li><li class="titremenu6"><a href="viewPicture.html?Urbex&urbex6" target="">Urbex6</a></li><li class="titremenu7"><a href="viewPicture.html?Urbex&urbex7" target="">Urbex7 </a></li></ul></section>');
 	}
 	document.getElementById('div1').innerHTML += contains;
 }
@@ -279,7 +305,7 @@ function afficheInfo(type, sujet){
 		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Lieux :&nbsp  </li><br><li>Date : </li></ol>');
 	} if (type == "Animaux"){
 		var contains = ('<h2>' + newSujet)
-	} if (type == "Miniature"){
+	} if (type == "Macro"){
 		var contains = ('<h2>' + newSujet)
 	} if (type == "Urbex"){
 		var contains = ('<h2>' + newSujet)
@@ -302,12 +328,6 @@ function afficheInfoDiaporama(type, sujet, number){
 	// document.getElementById('asideDiaporama').innerHTML = "Lieu : " + detailInfoPanorama[sujet][number].lieu + "<br>" + "Photos prise le : " + parameters[0] + "<br>" + "Photos prise le : " + parameters[1];
 	// document.getElementById('asideDiaporama').innerHTML = "<ul><li>" + "Lieu : " + detailInfoPanorama[sujet][thisImg].lieu + "<br>" + "Date : " + detailInfoPanorama[sujet][thisImg].date + "<br>" + "Heure : " + detailInfoPanorama[sujet][thisImg].heure + "</li><br><li>" + "Objectif : " + detailInfoPanorama[sujet][thisImg].objectif + "<br>" + "Materiel Photo : " + detailInfoPanorama[sujet][thisImg].materielPhoto + "<br>" + "Type photo : "+ detailInfoPanorama[sujet][thisImg].typePhoto + "</li><br><li>" + "Sensibilite : " + detailInfoPanorama[sujet][thisImg].sensibilite + "<br>" + "focale : " + detailInfoPanorama[sujet][thisImg].focale + "<br>" + "Temps de pose : " + detailInfoPanorama[sujet][thisImg].tpsPose + "<br>" + "Nombre de photo superposé : " + detailInfoPanorama[sujet][thisImg].NbrPhoto + "<bt></li></ul>" ; 
 }
-
-
-// function diaporama(type, sujet){
-// 	var contains = ('<a href="diaporama.html?' + type + '&' + sujet +'" target="_blank"><img src="../images/Icon/diaporama.jpg" title="Lire le diaporama"><br>Diaporama</a></img>&emsp;');
-// 	document.getElementById('diap').innerHTML += contains;
-// }
 
 function accueilDiap(type, sujet, image){
 	var srcImageCentral = "../images/" + type + "/" + sujet +" (" + image + ").jpg";
