@@ -44,17 +44,17 @@ var nbrImageSujet = {
     marion:[9],
     yulia:[5],
 
-    canada:[20],
+    canada:[1919],
     france:[25],
     italie:[15],
-    japon:[26],
+    japon:[27],
     martinique:[9],
 
 	bouquetin:[15],
 	ecureuil:[4],
 	marmotte:[21],
-	perroquet:[6],
-	guepier:[3],
+	perroquet:[8],
+	guepier:[4],
 	
 	urbex1:[7],
 	urbex2:[15],
@@ -243,7 +243,7 @@ function menuHorizontal(type, sujet){
 	} if (type == "Portrait"){
 		var contains = ('<a href="../index.html" id="titre"><h2>Portrait</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Portrait&anais" target="">Anaïs</a></li><li class="titremenu2"><a href="viewPicture.html?Portrait&anais2 " target="">Anais2 </a></li><li class="titremenu3"><a href="viewPicture.html?Portrait&angelique " target="">Angelique </a></li><li class="titremenu4"><a href="viewPicture.html?Portrait&johan" target="">Johan</a></li><li class="titremenu5"><a href="viewPicture.html?Portrait&karine " target="">Karine </a></li><li class="titremenu6"><a href="viewPicture.html?Portrait&mathilde" target="">Mathilde</a></li><li class="titremenu7"><a href="viewPicture.html?Portrait&marion " target="">Marion </a></li><li class="titremenu8"><a href="viewPicture.html?Portrait&yulia " target="">Yulia </a></li></ul></section>');
 	} if (type == "Animaux"){
-		var contains = ('<a href="../index.html" id="titre"><h2>Animaux</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Animaux&bouquetin" target="">Bouquetin</a></li><li class="titremenu2"><a href="viewPicture.html?Animaux&ecureuil" target="">Ecureuil</a></li><li class="titremenu3"><a href="viewPicture.html?Animaux&marmotte" target="">Marmotte</a></li><li class="titremenu4"><a href="viewPicture.html?Animaux&perroquet" target="">Perroquet</a></li><li class="titremenu5"><a href="viewPicture.html?Animaux&guepier" target="">Guepier</a></li></ul></section>');
+		var contains = ('<a href="../index.html" id="titre"><h2>Animaux</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Animaux&bouquetin" target="">Bouquetin</a></li><li class="titremenu2"><a href="viewPicture.html?Animaux&ecureuil" target="">Ecureuil</a></li><li class="titremenu3"><a href="viewPicture.html?Animaux&marmotte" target="">Marmotte</a></li><li class="titremenu4"><a href="viewPicture.html?Animaux&perroquet" target="">Perroquet</a></li><li class="titremenu5"><a href="viewPicture.html?Animaux&guepier" target="">Guêpier</a></li></ul></section>');
 	} if (type == "Macro"){
 		var contains = ('<a href="../index.html" id="titre"><h2>Macro</h2></a><section><ul><li class="titremenu1"><a href="viewPicture.html?Macro&fleur" target="">Fleur</a></li><li class="titremenu2"><a href="viewPicture.html?Macro&goutte" target="">Goutte</a></li><li class="titremenu3"><a href="viewPicture.html?Macro&insecte_rampant" target="">Insecte rampant</a></li><li class="titremenu4"><a href="viewPicture.html?Macro&insecte_volant" target="">Insecte volant</a></li></ul></section>');
 	} if (type == "Urbex"){
@@ -286,23 +286,23 @@ function afficheInfo(type, sujet){
 	String.prototype.ucFirst=function(){return this.substr(0,1).toUpperCase()+this.substr(1);}
 	var newSujet = sujet.ucFirst();
 	if (sujet == "voie_lactee"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" margin="auto">Photos prisent entre 20 et 30 secondes avec une grande ouverture afin d\'imprimer la faible lumière des étoiles. <br><br> Eclairage du premier plan avec une lampe.</br> </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px" margin="auto">Photos prisent entre 20 et 30 secondes avec une grande ouverture afin d\'imprimer la faible lumière des étoiles. <br><br> Eclairage du premier plan avec une lampe.</br> </li></ol>');
 	} else
 		if (sujet == "circumPolaire"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" text-align="center">Assemblage de plusieurs photos de même durée, focal, iso, etc... afin de faire apparaitre le déplacement des étoiles sans avoir la contrainte d\'augmenter la pollution lumineuse </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px" text-align="center">Assemblage de plusieurs photos de même durée, focal, iso, etc... afin de faire apparaitre le déplacement des étoiles sans avoir la contrainte d\'augmenter la pollution lumineuse </li></ol>');
 	} else
 	if (sujet == "comete"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" margin="auto">Photos des différentes comètes passants à proximité de la terre</li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px" margin="auto">Photos des différentes comètes passants à proximité de la terre</li></ol>');
 	} else
 	if (sujet == "ciel_profond"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" margin="auto">Photos de nébuleuses, galaxies, amas globulaire</br> </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px" margin="auto">Photos de nébuleuses, galaxies, amas globulaire</br> </li></ol>');
 	} else
 	if (type == "Astro"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Distance du soleil : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distSol + '</li><br><li id="colorTitreTextInfo">Diamètre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diam + '</li><br><li id="colorTitreTextInfo">Tps de révolution : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].revolution + '</li><br><li id="colorTitreTextInfo">Tps de rotation : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].rotation + '</li><br><li id="colorTitreTextInfo">Nbr de satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].sat + '</li><br><li id="colorTitreTextInfo">Nom satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].nomSat + '</li><br><br><li id="colorTitreTextInfo">Particularité : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].particularite + '</li><br></br><li id="colorTitreTextInfo">Distance de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distTerre + '</li><br><li id="colorTitreTextInfo">Diamètre apparent max : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diamAppMaxi + '</li><br><li id="colorTitreTextInfo">Magnitude maxi : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].magnMax + '</li><br><li id="colorTitreTextInfo">Dist. lum. de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].tpsLumTerre + '</li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px">Distance du soleil : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distSol + '</li><br><li id="colorTitreTextInfo">Diamètre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diam + '</li><br><li id="colorTitreTextInfo">Tps de révolution : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].revolution + '</li><br><li id="colorTitreTextInfo">Tps de rotation : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].rotation + '</li><br><li id="colorTitreTextInfo">Nbr de satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].sat + '</li><br><li id="colorTitreTextInfo">Nom satellite : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].nomSat + '</li><br><br><li id="colorTitreTextInfo">Particularité : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].particularite + '</li><br></br><li id="colorTitreTextInfo">Distance de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].distTerre + '</li><br><li id="colorTitreTextInfo">Diamètre apparent max : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].diamAppMaxi + '</li><br><li id="colorTitreTextInfo">Magnitude maxi : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].magnMax + '</li><br><li id="colorTitreTextInfo">Dist. lum. de la terre : &nbsp </li><li id="colorTextInfo"> ' + detailAstronomie[sujet].tpsLumTerre + '</li></ol>');
 	} if (type == "Paysage"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Capitale : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Capitale + '</li><br><li id="colorTitreTextInfo">Superficie : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Superficie + '</li><br><li id="colorTitreTextInfo">Population : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Population + '</li><br><li id="colorTitreTextInfo">Nombre de région : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].nbrReg + '</li><br></ol> <br><img id="home" src="../images/Miniatures/' + type + '/' + sujet + ' (0).jpg" width="30%" text-align="center" title="Carte"><br></a></img>&emsp;');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px">Capitale : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Capitale + '</li><br><li id="colorTitreTextInfo">Superficie : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Superficie + '</li><br><li id="colorTitreTextInfo">Population : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].Population + '</li><br><li id="colorTitreTextInfo">Nombre de région : &nbsp </li><li id="colorTextInfo"> ' + detailPaysage[sujet].nbrReg + '</li><br></ol> <br><img id="home" src="../images/Miniatures/' + type + '/' + sujet + ' (0).jpg" width="30%" text-align="center" title="Carte"><br></a></img>&emsp;');
 	} if (type == "Portrait"){
-		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo">Lieux :&nbsp  </li><br><li>Date : </li></ol>');
+		var contains = ('<h2>' + newSujet +'</h2><ol><li id="colorTitreTextInfo" style="padding-right:20px">Lieux :&nbsp  </li><br><li>Date : </li></ol>');
 	} if (type == "Animaux"){
 		var contains = ('<h2>' + newSujet)
 	} if (type == "Macro"){
