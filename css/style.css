@@ -3,7 +3,7 @@ a {
 	color: white;
 }
 
-h1, h3 {
+h1, h2, h3 {
 	color: yellow;
 	text-align: center;
 }
@@ -20,8 +20,12 @@ h1, h3 {
 
 }
 
+.ligne {
+	display:inline-block;
+  }
+
 .nav1 {
-	background-color: grey;
+	background-color: black;
 	height: 39em;
 }
 
@@ -54,7 +58,7 @@ h1, h3 {
 	text-align: center;
 	text-decoration: underline;
 	/* margin-top: 85%; */
-} */
+/* } */
 
 #boutonFerme{
 	margin: auto;

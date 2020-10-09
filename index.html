@@ -5,6 +5,7 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/fonctionJs.js"></script>
 		<!-- <script type="text/javascript" src="js/server.js"></script> -->
 
 		<style
@@ -14,22 +15,25 @@
 	<balise id="index"></balise>
 
 	<body class="indexPage">
-		<h1>Photographie</h1>
-		<h3>
-			<a href="#Portrait"> Portrait / </a>
-			<a href="#Paysage"> Paysage / </a>
-			<a href="#Animaux"> Animaux / </a>
-			<a href="#Macro"> Macro / </a>
-			<a href="#Urbex"> Urbex / </a>
-			<a href="#Astro"> Astronomie / </a>
-			<a href="#javascript"> JS  </a>
-		</h3>
 		<nav class="nav1">
+			<!-- <br> -->
+			<h1>Photographie</h1>
+			<h3>
+				<a href="#Portrait"> Portrait </a>&emsp;&emsp;&emsp;&emsp;
+				<a href="#Paysage"> Paysage </a>&emsp;&emsp;&emsp;&emsp;
+				<a href="#Animaux"> Animaux </a>&emsp;&emsp;&emsp;&emsp;
+				<a href="#Macro"> Macro </a>&emsp;&emsp;&emsp;&emsp;
+				<a href="#Urbex"> Urbex </a>&emsp;&emsp;&emsp;&emsp;
+				<a href="#Astro"> Astronomie </a>&emsp;&emsp;&emsp;&emsp;
+			</h3>
+			
+		<nav class="nav3">
 			<balise id="Portrait"></balise>
 			<br>
 			<h2><a href="#index">Photos de Portrait</a></h2>
 			<a href="view/viewPicture.html?Portrait&mathilde"><img src="images/Presentation/portrait.jpg" title="Portraits" height="75%" width="75%"></a></img>&emsp;
 			<p>
+			<a href="#index">En haut</a>
 		</nav>
 		
 		<nav class="nav2">
@@ -68,7 +72,7 @@
 			<br>
 			<h2><a href="#index">Photos urbex</a></h2>
 			<br>
-			<a href="view/viewPicture.html?Urbex&urbex"><img src="images/Presentation/urbex1.jpg" title="Urbex" height="75%" width="75%"></a></img>&emsp;	
+			<a href="view/viewPicture.html?Urbex&urbex1"><img src="images/Presentation/urbex1.jpg" title="Urbex" height="75%" width="75%"></a></img>&emsp;	
 			<p>
 			<a href="#index">En haut</a>
 		</nav>
@@ -93,8 +97,8 @@
 			
 			<a href="javascript:void(0)" onclick=maFonction()><img src="images/Miniatures/Portrait/mathilde (1).jpg" >MaFonction</a></img>&emsp;			
 			<a href="javascript:void(0)" onclick=maFonction2()><img src="images/Miniatures/Portrait/mathilde (1).jpg" height="150px" width="100px">Ma fonction2</a></img>&emsp;				
-			<a href="javascript:void(0)" onclick="test()"><img src="images/Miniatures/Portrait/mathilde (2).jpg" height="150px" width="100px">Test</a></img>&emsp;				
-			<a href="javascript:void(0)" onclick=test2("essai")><img src="images/Miniatures/Portrait/mathilde (2).jpg" >Test2</a></img>&emsp;				
+			<a href="javascript:void(0)" onclick=test()><img src="images/Miniatures/Portrait/mathilde (2).jpg" height="150px" width="100px">Test</a></img>&emsp;				
+			<a href="javascript:void(0)" onclick=test2(essai)><img src="images/Miniatures/Portrait/mathilde (2).jpg" >Test2</a></img>&emsp;				
 			<a href="javascript:void(0)" onclick=newEmployee()><img src="images/Miniatures/Portrait/mathilde (3).jpg" >NewEmploye</a></img>&emsp;				
 			<a href="javascript:void(0)" onclick=employee()><img src="images/Miniatures/Portrait/anais (2).jpg" ></a></img>&emsp;				
 			<a href ="javascript:test()">Cliquez ici</a>
@@ -102,11 +106,14 @@
 			<a href ="javascript:affiche()">Cliquez</a>
 			<p>
 			<a href="#index">En haut</a>
+			
+			<a href="javascript:void(0)" onclick=pourcentage()><img src="images/Miniatures/Portrait/marion (3).jpg" ></a>Pourcentage</img>&emsp;
 		</nav>
 	</body>
 
 	<footer>
 		<p class="pfooter">Site développé par Florian Aurigoth</p>
+		<A class="icoMail" HREF="mailto:florian.aurigoth@yahoo.fr"><img src="https://findicons.com/files/icons/77/icandy_junior_toolbar/128/email_envelope.png" style="text-align: center" alt="Phone" width="2%"></A>&emsp;<br>
 		<br>
 	</footer>
 </html>

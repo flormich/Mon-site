@@ -1,5 +1,7 @@
 //Tableau
 // require("/mymodule.js");
+
+
 var detailAstronomie = {
 	soleil:{distSol:"0",diam:"1,39 millions km",rotation:"28 jours",revolution:"-",sat:"-",distTerre:"149 millions km",diamAppMaxi:"32\'27\"",magnMax:"-26,73",tpsLumTerre:"8 minutes",particularite:"Dégage lumière et chaleur", nomSat:"-"},
 	mercure:{distSol:"57 millions km",diam:"4 879 km",rotation:"59 jours",revolution:"88 jours",sat:"0",distTerre:"92 millions km",diamAppMaxi:"13\"",magnMax:"-2",tpsLumTerre:"5 minutes 6 sec",particularite:"Planète grillée", nomSat:""},
@@ -45,14 +47,14 @@ var nbrImageSujet = {
     yulia:[5],
 
     canada:[1919],
-    france:[25],
+    france:[28],
     italie:[15],
     japon:[27],
     martinique:[9],
 
 	bouquetin:[15],
 	ecureuil:[4],
-	marmotte:[21],
+	marmotte:[22],
 	perroquet:[8],
 	guepier:[4],
 	
@@ -64,19 +66,19 @@ var nbrImageSujet = {
 	urbex6:[6],
 	urbex7:[9],
 
-	fleur:[14],
-	goutte:[1],
+	fleur:[13],
+	goutte:[2],
 	insecte_rampant:[11],
-	insecte_volant:[11],
+	insecte_volant:[12],
 
     soleil:[11],
     mercure:[0],
     venus:[4],
     phenomene:[19],
     lune:[13],
-    mars:[4],
-    jupiter:[5],
-    saturne:[12],
+    mars:[9],
+    jupiter:[11],
+    saturne:[14],
     voie_lactee:[42],
     circumPolaire:[9],
     ciel_profond:[3],
@@ -92,73 +94,86 @@ var detailInfoPanorama = {
 			7:{titre:"Eclipse annulaire", lieu:"Cullera (Espagne)", date:"03/10/2005", heure:"10h15", objectif:"Telescope C8", materielPhoto:"Canon 500N au foyer", typePhoto:"Argentique", sensibilite:"200 iso", focale:"-", tpsPose:"1/1000 sec", NbrPhoto:"1"},
 			8:{titre:"Eclipse annulaire", lieu:"Cullera (Espagne)", date:"03/10/2005", heure:"11h01", objectif:"Telescope C8", materielPhoto:"Canon 500N au foyer", typePhoto:"Argentique", sensibilite:"200 iso", focale:"-", tpsPose:"1/30 sec", NbrPhoto:"1"},
 			9:{titre:"Eclipse annulaire", lieu:"Cullera (Espagne)", date:"03/10/2005", heure:"12h05", objectif:"Telescope C8", materielPhoto:"Canon 500N au foyer", typePhoto:"Argentique", sensibilite:"200 iso", focale:"-", tpsPose:"1/1500 sec", NbrPhoto:"1"},
-			10:{titre:"Eclipse partielle", lieu:"", date:"", heure:"", objectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:"1"},
-			11:{titre:"Eclipse partielle", lieu:"", date:"", heure:"", objectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:"1"},
+			10:{titre:"Eclipse partielle", lieu:"", date:"20/03/2015", heure:"11h52", objectif:"400mm", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"3200", focale:"f5.6", tpsPose:"1/100 sec", NbrPhoto:"1"},
+			11:{titre:"Eclipse partielle", lieu:"", date:"20/03/2015", heure:"12h24", objectif:"370mm", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"800", focale:"f6.3", tpsPose:"1/80 sec", NbrPhoto:"1"},
 	},
 	mercure:{1:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	venus:{1:{titre:"Vénus", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-			2:{titre:"Passage de vénus devant le soleil", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-			3:{titre:"Passage de vénus devant le soleil", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-			4:{titre:"Passage de vénus devant le soleil", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	venus:{1:{titre:"Vénus", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+			2:{titre:"Passage de vénus devant le soleil", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+			3:{titre:"Passage de vénus devant le soleil", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+			4:{titre:"Passage de vénus devant le soleil", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	phenomene:{1:{titre:"Orage", lieu:"Demigny", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		6:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		7:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		8:{titre:"Orage", lieu:"Noyer-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		9:{titre:"Cassiopé", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		10:{titre:"Flash iridium", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		11:{titre:"Le ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		12:{titre:"Le ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		13:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		14:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		15:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		16:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		17:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		18:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		19:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	phenomene:{1:{titre:"Orage", lieu:"Demigny", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Orage", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Orage", lieu:"Noyer-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Cassiopé", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Flash iridium", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Le ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		12:{titre:"Le ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		13:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		14:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		15:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		16:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		17:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		18:{titre:"Arc-en-ciel", lieu:"Saint Trivier sur Moignans", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		19:{titre:"Arc-en-ciel", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	lune:{1:{titre:"Dernier quartier", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Croissant", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Premier quartier", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Croissant", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		6:{titre:"Mer des crises", lieu:"Mont july (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		7:{titre:"", lieu:"Mont july (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		8:{titre:"Lune cendrée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		9:{titre:"Partie de lune", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		10:{titre:"Dernier quartier", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		11:{titre:"Croissant", lieu:"", date:"Pact (38)", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		12:{titre:"Croissant", lieu:"", date:"Pact (38)", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		13:{titre:"Dernier quartier", lieu:"Bren (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	lune:{1:{titre:"Dernier quartier", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Croissant", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Premier quartier", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Croissant", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Mer des crises", lieu:"Mont july (01)", date:"", heure:"", ojectif:"", materielPhoto:"Argentique", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"", lieu:"Mont july (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Lune cendrée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Partie de lune", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Dernier quartier", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Croissant", lieu:"", date:"Pact (38)", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		12:{titre:"Croissant", lieu:"", date:"Pact (38)", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		13:{titre:"Dernier quartier", lieu:"Bren (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	mars:{1:{titre:"Mars", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	mars:{1:{titre:"Mars", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Mars", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Mars", lieu:"Oullins (69)", date:"16/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Mars", lieu:"Oullins (69)", date:"17/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Mars", lieu:"Oullins (69)", date:"17/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Mars", lieu:"Oullins (69)", date:"17/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	jupiter:{1:{titre:"Jupiter", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	jupiter:{1:{titre:"Jupiter", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Jupiter", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Jupiter", lieu:"Oullins (69)", date:"15/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Jupiter", lieu:"Oullins (69)", date:"15/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Jupiter", lieu:"Oullins (69)", date:"16/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Jupiter", lieu:"Oullins (69)", date:"17/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Jupiter", lieu:"Oullins (69)", date:"17/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Jupiter", lieu:"Oullins (69)", date:"17/09/2020", heure:"", ojectif:"", materielPhoto:"Webcam TouCamPro2", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	saturne:{1:{titre:"Premiere saturne", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Premiere saturne", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		6:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		7:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		8:{titre:"Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		9:{titre:"Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		10:{titre:"Occultation Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		11:{titre:"Occultation Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		12:{titre:"Occultation Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	saturne:{1:{titre:"Premiere saturne", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Premiere saturne", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Saturne", lieu:"Menthon saint bernard (74)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Occultation Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Occultation Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		12:{titre:"Occultation Saturne", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		13:{titre:"Saturne", lieu:"Oullins (69)", date:"16/09/2020", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		14:{titre:"Saturne", lieu:"Oullins (69)", date:"16/09/2020", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
 	uranus:{1:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
@@ -166,72 +181,72 @@ var detailInfoPanorama = {
 	},
 	pluton:{1:{titre:"", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	voie_lactee:{1:{titre:"Voie lactée", lieu:"Lesches-en-Diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Voie lactée", lieu:"Lesches-en-Diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		6:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		7:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		8:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		9:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		10:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		11:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		12:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	voie_lactee:{1:{titre:"Voie lactée", lieu:"Lesches-en-Diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Voie lactée", lieu:"Lesches-en-Diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		9:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		10:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		11:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		12:{titre:"Voie lactée", lieu:"Noyers-sur-Jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		
-		13:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		14:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		15:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		16:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		17:{titre:"Voie lactée", lieu:"Sanary sur mer (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		18:{titre:"Voie lactée", lieu:"Sanary sur mer (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		19:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		20:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		21:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		22:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		13:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		14:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		15:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		16:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		17:{titre:"Voie lactée", lieu:"Sanary sur mer (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		18:{titre:"Voie lactée", lieu:"Sanary sur mer (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		19:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		20:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		21:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		22:{titre:"Voie lactée", lieu:"Le Noyer", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	
-		23:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		24:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		25:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		26:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		27:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		28:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		29:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		30:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		31:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		32:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		23:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		24:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		25:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		26:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		27:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		28:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		29:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		30:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		31:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		32:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 
-		33:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		34:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		35:{titre:"Voie lactée", lieu:"Vallon combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		36:{titre:"Voie lactée", lieu:"Vallon combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		37:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		38:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		39:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		40:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		41:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		42:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		33:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		34:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		35:{titre:"Voie lactée", lieu:"Vallon combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		36:{titre:"Voie lactée", lieu:"Vallon combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		37:{titre:"Voie lactée", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		38:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		39:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		40:{titre:"Voie lactée", lieu:"Lesches en diois (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		41:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		42:{titre:"Voie lactée", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 		
 	},
-	circumPolaire:{1:{titre:"Filé détoile", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Filé détoile", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Filé détoile", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Filé détoile", lieu:"Noyers-sur-jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Filé détoile", lieu:"Vallon de combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		6:{titre:"Filé détoile", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		7:{titre:"Filé détoile", lieu:"Morestel (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		8:{titre:"Filé détoile", lieu:"Demigny (71)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		9:{titre:"Filé détoile", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	circumPolaire:{1:{titre:"Filé détoile", lieu:"Demigny (71)", date:"25/06/2011", heure:"23h05", ojectif:"Tamron 18mm", materielPhoto:"Canon 450D", typePhoto:"Numérique", sensibilite:"800", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Filé détoile", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Filé détoile", lieu:"Blieux (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Filé détoile", lieu:"Noyers-sur-jabron (04)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		5:{titre:"Filé détoile", lieu:"Vallon de combeau (26)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		6:{titre:"Filé détoile", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		7:{titre:"Filé détoile", lieu:"Morestel (38)", date:"14/07/2013", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		8:{titre:"Filé détoile", lieu:"Demigny (71)", date:"17/03/2012", heure:"19h00", ojectif:"Tamron 18mm", materielPhoto:"Canon 450D", typePhoto:"Numérique", sensibilite:"100", focale:"", tpsPose:"595 x 20 = 3h18", NbrPhoto:"595"},
+		9:{titre:"Filé détoile", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
 	},
-	ciel_profond:{1:{titre:"Galaxie d'andromède", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Galaxie d'andromède", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Amas", lieu:"", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	ciel_profond:{1:{titre:"Galaxie d'andromède", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Galaxie d'andromède", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Amas", lieu:"", date:"15/08/2018", heure:"00h45", ojectif:"C8", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"5 000", focale:"F10", tpsPose:"30 sec", NbrPhoto:"1"},
 	},
-	comete:{1:{titre:"Hale-Bop", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		2:{titre:"Hale-Bop", lieu:"Bourg-en-bresse (01)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		3:{titre:"Holmes", lieu:"Pact (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		4:{titre:"Neowise", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
-		5:{titre:"Neowise", lieu:"Villefontaine (38)", date:"", heure:"", ojectif:"", materielPhoto:"", typePhoto:"", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+	comete:{1:{titre:"Hale-Bop", lieu:"Bourg-en-bresse (01)", date:"Juillet 1995", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		2:{titre:"Hale-Bop", lieu:"Bourg-en-bresse (01)", date:"Juillet 1995", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Argentique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		3:{titre:"Holmes", lieu:"Pact (38)", date:"Novembre 2007", heure:"", ojectif:"", materielPhoto:"", typePhoto:"Numérique", sensibilite:"", focale:"", tpsPose:"", NbrPhoto:""},
+		4:{titre:"Neowise", lieu:"Villefontaine (38)", date:"Juillet 2020", heure:"22h54", ojectif:"18mm", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"1600", focale:"f3.5", tpsPose:"3.2 sec", NbrPhoto:"1"},
+		5:{titre:"Neowise", lieu:"Villefontaine (38)", date:"Juillet 2020", heure:"23h25", ojectif:"135mm", materielPhoto:"Canon 70D", typePhoto:"Numérique", sensibilite:"2500", focale:"f5.6", tpsPose:"5 sec", NbrPhoto:"1"},
 	},
 };
 
@@ -428,101 +443,3 @@ function newSlide(direction) {
 
 
 
-//Test de fonction
-
-function maFonction(){
-	var nouvVariable = prompt("Donne la variable : ", "");
-	if (nouvVariable) {
-		alert("Tu as mis : " + nouvVariable);
-	} else {
-		alert("Tu n'as rien mis");
-	}
-}
-
-function maFonction2(){
-	var premierChiffre = prompt("Donne le premier chiffre : ", "");
-	var calcul = prompt ("Choisir le signe de calcul", "");
-	var deuxiemeChiffre = prompt("Donnes le deuxième chiffre :", "");
-	if (calcul == "+"){
-		var resultat = (parseInt(premierChiffre) + parseInt(deuxiemeChiffre));
-		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
-		return;
-	} if (calcul == "-"){
-		var resultat = (parseInt(premierChiffre) - parseInt(deuxiemeChiffre));
-		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
-		return;
-	} if (calcul == "*"){
-		var resultat = (parseInt(premierChiffre) * parseInt(deuxiemeChiffre));
-		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
-		return;
-	} if (calcul == "/"){
-		var resultat = (parseInt(premierChiffre) / parseInt(deuxiemeChiffre));
-		alert("Le résultat de " + premierChiffre + calcul + deuxiemeChiffre + " est : " + resultat);
-		return;
-	} else {
-		alert("Calcul impossible à effectuer");
-	}
-	
-}
-
-function test(){
-	var nom = "MICHEL";
-	var prenom = "Florian";
-	var tab = [1, 50, true, false, "Text", nom, prenom, [1,2,3], {}, null, NaN];
-	var obj = {name:"Toto", age:31, tableau:tab, tabs:["a","b",1], objet:{prop:"valeurs"} };
-	
-	console.log (nom);
-	console.log (prenom);
-	console.log (tab);
-	console.log (obj);
-	console.log (tab[6] + " " + tab[5]);
-	console.log (obj.age);
-
-	var essai = "objet";
-	
-	// alert ("Tu t'appel : " + tab[6] + " " + tab[5]);
-	// alert ("Ton age est : " + obj.age + " ans");
-	// alert ("L'index n°2 du tab est = " + tab[7][1]);
-	alert ("L'index n°2 de l'objet est = " + obj.tabs[1]);
-	alert ("L'essai est : " + obj[essai].prop);
-	
-	// test2("Appel de la fonction test2");
-}
-
-function test2(parametre){
-	alert (parametre);
-	var tempo = "Tempo";
-	alert (tempo);
-}
-
-function employee (name, jobtitle, born){
-	this.name=name;
-	this.jobtitle=jobtitle;
-	this.born=born;
-	// alert ("Votre nom est : " + this.name + "\n" + "Votre job est :" + this.jobtitle + "\n" + "Votre année de naissance est : " + this.born);	
-	born = parseInt(this.born);
-	var aujourdhui = new Date();
-	var annee = aujourdhui.getUTCFullYear();
-	// alert (typeof born);
-	// alert (typeof annee);
-	var age = (annee - born);
-	document.write ("Résumé :" + "<br>" 
-		+ "Votre nom est : " + this.name + "<br>" 
-		+ "Votre job est :" + this.jobtitle + "<br>" 
-		+ "Votre année de naissance est : " + this.born + "<br>"
-		+ "Et tu as : " + age + " ans");	
-}
-
-function newEmployee (){
-	var name = prompt ("Votre nom");
-	var jobtitle = prompt ("Votre métier : ");
-	var born = prompt ("Votre annee de naissance");
-	var employ = new employee(name, jobtitle, born);
-}
-
-// function newEmployee(){
-	// var fred=new employee("Fred","caverman",1970);
-	// employee.prototype.salary=null;
-	// fred.salary=2000;
-	// alert (fred.name + "\n" + fred.salary + "\n" + fred.jobtitle);
-// }
